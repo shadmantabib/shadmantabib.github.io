@@ -1,0 +1,486 @@
+{
+  "basics": {
+    "name": "H.M. Shadman Tabib",
+    "label": "Computational Biology | Computer Vision & AI for Health | Machine Learning",
+    "image": "prof_pic.jpg",
+    "email": "shadmantabib2002@gmail.com",
+    "phone": "+880-1880-198766",
+    "url": "https://shadmantabib.github.io"
+    "summary": "Senior year undergraduate student in Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET). Research interests at the intersection of computational biology, computer vision, and AI for health. Currently collaborating with Carnegie Mellon University, University of Wisconsin–Madison, and Stanford University on cutting-edge projects in cryo-electron tomography, contextualized machine learning, and biological image analysis.",
+    "location": {
+      "address": "Department of Computer Science and Engineering",
+      "postalCode": "",
+      "city": "Dhaka",
+      "countryCode": "BD",
+      "region": "Bangladesh"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "shadmantabib",
+        "url": "https://github.com/shadmantabib"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "hm-shadman-tabib",
+        "url": "https://www.linkedin.com/in/hm-shadman-tabib/"
+      },
+      {
+        "network": "Portfolio",
+        "username": "Portfolio Website",
+        "url": "https://shadmantabib.github.io/shadman-tabib-portfolio/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Research & Innovation Centre (RIC), Bangladesh University of Engineering and Technology (BUET)",
+      "position": "Part-Time Research Engineer",
+      "url": "https://ric.buet.ac.bd/",
+      "startDate": "2025-02-01",
+      "endDate": "Present",
+      "summary": "Project: Identification of Dengue Breeding Sites through Object Recognition (HE-01-244). Contributing to dengue vector surveillance using deep learning–based object recognition and image analysis for public health applications.",
+      "highlights": [
+        "Deep learning-based object recognition for dengue vector surveillance"
+      ]
+    },
+    {
+      "name": "Carnegie Mellon University (Xu Lab)",
+      "position": "Remote Research Collaborator",
+      "url": "https://www.cs.cmu.edu/~mxu1/",
+      "startDate": "2024-06-01",
+      "endDate": "Present",
+      "summary": "Advisor: Dr. Min Xu. Working on unsupervised Cryo-ET segmentation and particle picking through tomogram preprocessing and denoising for high-resolution biological structure reconstruction.",
+      "highlights": [
+        "Unsupervised Cryo-ET segmentation and particle picking",
+        "Tomogram preprocessing and denoising",
+        "High-resolution biological structure reconstruction",
+        "Foundation model-based approaches for biological imaging"
+      ]
+    },
+    {
+      "name": "University of Wisconsin–Madison (Adaptive Inference Lab)",
+      "position": "Remote Research Collaborator",
+      "url": "https://web.mit.edu/~blengeri/www/",
+      "startDate": "2024-09-01",
+      "endDate": "2025-09-01",
+      "summary": "Advisor: Dr. Ben Lengerich. Co-authoring a comprehensive review on contextualized machine learning and interpretability in foundation models. Contributing to the AdaptInfer framework and contextual awareness in data-driven modeling.",
+      "highlights": [
+        "Comprehensive review on contextualized machine learning",
+        "Interpretability in foundation models",
+        "AdaptInfer framework development",
+        "Contextual awareness in data-driven modeling"
+      ]
+    },
+    {
+      "name": "Stanford University",
+      "position": "Remote Research Collaborator",
+      "url": "https://med.stanford.edu/",
+      "startDate": "2025-09-01",
+      "endDate": "Present",
+      "summary": "Advisor: Dr. Muyuan Chen. Conducting segmentation and analysis of Hydra Plasma Focused Ion Beam (PFIB) tomography data for structural interpretation and morphology reconstruction.",
+      "highlights": [
+        "Hydra Plasma Focused Ion Beam (PFIB) tomography analysis",
+        "Structural interpretation and morphology reconstruction",
+        "Advanced biological imaging techniques"
+      ]
+    },
+    {
+      "name": "Bangladesh University of Engineering and Technology (BUET) - Multiple Research Projects",
+      "position": "Undergraduate Research Assistant",
+      "url": "https://cse.buet.ac.bd/",
+      "startDate": "2023-01-01",
+      "endDate": "Present",
+      "summary": "Multiple research projects under different supervisors covering diverse areas of computer science and engineering.",
+      "highlights": [
+        "Semi-supervised and multimodal breast cancer classification (Prof. Dr. M. Sohel Rahman)",
+        "RNA segmentation and multimodal model training frameworks (Prof. Dr. Md. Shamsuzzoha Bayzid)",
+        "EEG-based context-aware deep learning for epilepsy prognosis (Prof. Dr. A.B.M. Alim Al Islam)",
+        "Real-time drone detection and tracking systems (Prof. Dr. Ch. Md. Rakin Haider)",
+        "Bias-aware retrieval-augmented generation for clinical predictions (Prof. Dr. M. Saifur Rahman)",
+        "Stochastic spatio-temporal epidemiology modeling on multiplex networks (Dr. K.M. Ariful Kabir)"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "PinkLifeLine",
+      "location": "Dhaka, Bangladesh",
+      "position": "Co-Founder & Head of Research",
+      "url": "https://www.herwill.org/",
+      "startDate": "2025-01-01",
+      "endDate": "Present",
+      "summary": "Health-tech startup from NeoScreenix (JHU 2025 Global Champion); funded by Bangladesh National ICT Division. Partnered with Sustainlaunch Labs (global innovation accelerator) and Herwill (USA based global women's empowerment & digital inclusion).",
+      "highlights": [
+        "Built and leads a 50+ medical professionals' network",
+        "Leads ML clinical data pipelines & screening workflows",
+        "Partnership with Sustainlaunch Labs and Herwill",
+        "Bangladesh National ICT Division funding"
+      ]
+    },
+    {
+      "organization": "BUET CSE Fest Deep Learning Sprint 2025",
+      "location": "Dhaka, Bangladesh",
+      "position": "Lead Organizer & Problem Setter",
+      "url": "https://cse.buet.ac.bd/",
+      "startDate": "2025-11-01",
+      "endDate": "2026-01-01",
+      "summary": "Coordinated largest national AI datathon; designed problems and rubric, and supervised judging. Collaborated with academic & industry mentors to ensure high-quality competition standards.",
+      "highlights": [
+        "Largest national AI datathon coordination",
+        "Problem design and rubric development",
+        "Academic and industry mentor collaboration",
+        "High-quality competition standards"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bangladesh University of Engineering and Technology (BUET)",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://cse.buet.ac.bd/",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor of Science (B.Sc.)",
+      "startDate": "2022-01-01",
+      "endDate": "Present",
+      "score": "CGPA > 3.75 (Dean's & University Merit Scholarships)",
+      "courses": [
+        "Machine Learning",
+        "Computer Vision", 
+        "Bioinformatics",
+        "Database Systems",
+        "Software Engineering",
+        "Algorithms and Data Structures",
+        "Artificial Intelligence"
+      ],
+      "description": "Senior Year Undergraduate Student. Thesis Supervisors: Dr. M. Sohel Rahman, Dr. Md. Shamsuzzoha Bayzid. Sustained academic excellence with CGPA > 3.75 over three consecutive years and topped in the department."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Global Champion — Johns Hopkins Healthcare Design Competition (Team NeoScreenix)",
+      "date": "2025-01-01",
+      "awarder": "Johns Hopkins University",
+      "url": "https://www.thedailystar.net/news/bangladesh/news/buet-team-wins-1st-place-johns-hopkins-healthcare-design-competition-3884801",
+      "summary": "Global Champion with Team NeoScreenix for AI-powered breast cancer detection system. Featured in national media coverage: Daily Star, TBS News, UNB News, and TV coverage on YouTube."
+    },
+    {
+      "title": "Global 2nd Runner-up — IEEE SPS Video & Image Processing (VIP) Cup",
+      "date": "2025-01-01",
+      "awarder": "IEEE Signal Processing Society",
+      "url": "https://2025.ieeeicip.org/ieee-sps-video-and-image-processing-cup/",
+      "summary": "International competition on video & image processing with SpectraSentinel project for real-time drone detection and tracking."
+    },
+    {
+      "title": "Datathons Excellence",
+      "date": "2024-01-01",
+      "awarder": "Multiple Organizations",
+      "url": "",
+      "summary": "KUET 2025 (Top 5%); BUET DL Sprint 2024 (Top 15%); CZI Kaggle 2024 (Top 43%); SUST DL Enigma 2024 (Top 34%)"
+    },
+    {
+      "title": "Dean's & University Merit Scholarships",
+      "date": "2022-01-01",
+      "awarder": "Bangladesh University of Engineering and Technology (BUET)",
+      "url": "https://buet.ac.bd/",
+      "summary": "Sustained academic excellence (CGPA > 3.75 over three consecutive years) and topped in the department."
+    },
+    {
+      "title": "Champion — Bangladesh Biology Olympiad (BdBO)",
+      "date": "2019-01-01",
+      "awarder": "Bangladesh Biology Olympiad Committee",
+      "url": "",
+      "summary": "National champion in Bangladesh Biology Olympiad 2019."
+    },
+    {
+      "title": "Second Runner-up — Bangladesh Mathematical Olympiad (BdMO)",
+      "date": "2019-01-01",
+      "awarder": "Bangladesh Mathematical Olympiad Committee", 
+      "url": "",
+      "summary": "Achieved second runner-up position in Bangladesh Mathematical Olympiad 2019–2020."
+    },
+    {
+      "title": "Winner — Bangladesh Physics Olympiad (BdPhO)",
+      "date": "2019-01-01",
+      "awarder": "Bangladesh Physics Olympiad Committee",
+      "url": "",
+      "summary": "Winner of Bangladesh Physics Olympiad 2019."
+    },
+    {
+      "title": "4th Place & Extended National Camper — Bangladesh Chemistry Olympiad (BdChO)",
+      "date": "2020-01-01",
+      "awarder": "Bangladesh Chemistry Olympiad Committee",
+      "url": "",
+      "summary": "Ranked 4th nationally and selected for extended national camp to represent Bangladesh at IChO 2020."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Unsupervised Multi-scale Segmentation of Cellular Cryo-electron Tomograms with Stable Diffusion Foundation Model",
+      "publisher": "Submitted to CVPR",
+      "releaseDate": "2025-06-25",
+      "url": "https://doi.org/10.1101/2025.06.25.661425",
+      "summary": "Mostofa Rafid Uddin, Thanh-Huy Nguyen*, H.M. Shadman Tabib*, Kashish Gandhi, Min Xu. Novel approach for unsupervised segmentation of cellular cryo-electron tomograms using stable diffusion foundation models."
+    },
+    {
+      "name": "Localization of Macromolecules in Crowded Cellular Cryo-electron Tomograms from Extremely Sparse Labels",
+      "publisher": "Briefings in Bioinformatics — Accepted",
+      "releaseDate": "2025-01-01",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.11.04.620735v2",
+      "summary": "Mostofa Rafid Uddin, Ajmain Yasar Ahmed*, H.M. Shadman Tabib*, Md Toki Tahmid, Md Zarif Ul Alam, Zachary Freyberg, Min Xu. Novel approach for macromolecule localization in crowded cellular environments using extremely sparse labeling techniques."
+    },
+    {
+      "name": "NEUROSKY-EPI: The First Open Single-Electrode Epilepsy EEG Dataset with Context-Aware Modeling",
+      "publisher": "NeurIPS 2025 Workshop on Time Series for Health (TS4H) — Accepted",
+      "releaseDate": "2025-01-01",
+      "url": "https://openreview.net/forum?id=RumQSMSRHj",
+      "summary": "H.M. Shadman Tabib, Md. Hasnaen Adil, Ayesha Rahman, Ahmmad Nur Swapnil, Maoyejatun Hasana, A.B.M. Alim Al Islam. First open-source single-electrode epilepsy EEG dataset with context-aware deep learning models."
+    },
+    {
+      "name": "Contextualized Machine Learning: Towards Adaptive, Interpretable, and Generalizable AI Systems",
+      "publisher": "UW–Madison Research Project",
+      "releaseDate": "2025-01-01",
+      "url": "https://github.com/AdaptInfer/context-review",
+      "summary": "Ben Lengerich, Caleb Ellington, Sazan Mahbub, H.M. Shadman Tabib, et al. Comprehensive review on contextualized machine learning and interpretability in foundation models."
+    },
+    {
+      "name": "End-to-End Bangla AI for Solving Math Olympiad Problem Benchmark",
+      "publisher": "International Journal of Natural Language Computing (IJNLC) — Accepted",
+      "releaseDate": "2024-01-01",
+      "url": "https://arxiv.org/abs/2501.04425",
+      "summary": "H.M. Shadman Tabib, Jaber Ahmed Deedar. End-to-end AI system for solving Bangla mathematical olympiad problems using natural language processing."
+    },
+    {
+      "name": "Breast Cancer Detection Using Semi-Supervised Learning: Multimodal Data Integration and Comparative Demographic Analysis",
+      "publisher": "NSyS 2024 (11th Intl. Conf. on Networking, Systems, and Security) - Accepted as Poster",
+      "releaseDate": "2024-01-01",
+      "url": "https://www.researchgate.net/profile/Mst-Fahmida-Naznin/publication/386218434",
+      "summary": "H.M. Shadman Tabib, Mst. Fahmida Sultana Naznin, Sadatul Islam Sadi, Md. Hasnaen Adil, Zarin Tasnim Oishi, M. Sohel Rahman. Semi-supervised multimodal approach for breast cancer detection."
+    },
+    {
+      "name": "Study on Locomotive Epidemic Dynamics in a Stochastic Spatio-Temporal Simulation Model on a Multiplex Network",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2025-01-01",
+      "url": "https://arxiv.org/pdf/2509.21017",
+      "summary": "H.M. Shadman Tabib*, Jaber Ahmed Deedar*, K.M. Ariful Kabir. Agent-based modeling of epidemic spread through multiplex networks with socioeconomic considerations."
+    },
+    {
+      "name": "SpectraSentinel: Lightweight Dual-Stream Real-Time Drone Detection, Tracking and Payload Identification",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2025-01-01",
+      "url": "https://arxiv.org/pdf/2507.22650",
+      "summary": "Shahriar Kabir, Istiak Ahmmed Rifti, H.M. Shadman Tabib, Mushfiqur Rahman, Sadatul Islam Sadi, Hasnaen Adil, Ahmed Mahir Sultan Rumi, Ch. Md. Rakin Haider. Dual-stream lightweight system for real-time drone detection."
+    },
+    {
+      "name": "Exploring Livelihood Dynamics and Policy Interventions in Mangrove Social-Ecological Systems with Agent-Based Modeling: A Mesa Framework Approach",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2024-01-01",
+      "url": "https://example.com",
+      "summary": "Anik Saha, H.M. Shadman Tabib, M. Sohel Rahman. Agent-based modeling of mangrove social-ecological systems using the Mesa framework."
+    },
+    {
+      "name": "Toward Trustworthy Difficulty Assessments: Large Language Models as Judges in Programming and Synthetic Tasks",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2025-01-01",
+      "url": "https://openreview.net",
+      "summary": "H.M. Shadman Tabib, Jaber Ahmed Deedar. Using large language models as evaluators for synthetic data quality and programming task difficulty assessment."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Expert",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "PyTorch", 
+        "TensorFlow",
+        "Keras",
+        "C/C++",
+        "Java",
+        "SQL",
+        "JavaScript",
+        "Dart"
+      ]
+    },
+    {
+      "name": "Machine Learning & AI",
+      "level": "Expert",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "Computer Vision",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Unsupervised Learning",
+        "Agent-Based Modeling",
+        "Semi-supervised Learning",
+        "Multimodal Learning"
+      ]
+    },
+    {
+      "name": "Specialized Domains",
+      "level": "Advanced",
+      "icon": "fa-solid fa-microscope",
+      "keywords": [
+        "Cryo-ET Processing",
+        "Medical Imaging",
+        "Bioimage Analysis",
+        "Bioimage Segmentation",
+        "Brain-Computer Interfaces",
+        "Real-time Systems",
+        "Mesa Framework",
+        "Flutter"
+      ]
+    },
+    {
+      "name": "Development & Tools",
+      "level": "Advanced",
+      "icon": "fa-solid fa-laptop-code",
+      "keywords": [
+        "Django",
+        "HTML/CSS",
+        "Node.js",
+        "React",
+        "Spring",
+        "Database Design",
+        "Git",
+        "LaTeX"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": "🇺🇸"
+    },
+    {
+      "language": "Bengali",
+      "fluency": "Native speaker",
+      "icon": "🇧🇩"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Computational Biology",
+      "icon": "fa-solid fa-dna",
+      "keywords": [
+        "Cryo-ET image analysis",
+        "Connectomics segmentation", 
+        "RNA task accuracy estimation",
+        "Biological structure reconstruction"
+      ]
+    },
+    {
+      "name": "Computer Vision & AI for Health",
+      "icon": "fa-solid fa-eye",
+      "keywords": [
+        "Medical imaging (cancer detection)",
+        "Multimodal and semi-supervised learning",
+        "Bioimage segmentation",
+        "Brain-computer interfaces (epilepsy)",
+        "Real-time systems"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "Unsupervised detection/segmentation",
+        "Contextualized ML",
+        "LLM-as-a-judge for synthetic data evaluation",
+        "Foundation models"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Prof. Dr. M. Sohel Rahman",
+      "icon": "fa-solid fa-user-graduate",
+      "reference": "Professor, Department of CSE, BUET. Email: sohel.kcl@gmail.com | Google Scholar: https://scholar.google.com/citations?user=IUwFD9gAAAAJ&hl=en"
+    },
+    {
+      "name": "Prof. Dr. Md. Shamsuzzoha Bayzid", 
+      "icon": "fa-solid fa-user-graduate",
+      "reference": "Professor, Department of CSE, BUET. Email: bayzid@cse.buet.ac.bd | Google Scholar: https://scholar.google.com/citations?user=h2vHz3wAAAAJ&hl=en"
+    },
+    {
+      "name": "Dr. Min Xu",
+      "icon": "fa-solid fa-user-graduate", 
+      "reference": "Associate Professor, Computational Biology Department, Carnegie Mellon University. Faculty Profile: https://scholars.cmu.edu/6103-min-xu"
+    },
+    {
+      "name": "Dr. Ben Lengerich",
+      "icon": "fa-solid fa-user-graduate",
+      "reference": "Assistant Professor, University of Wisconsin–Madison. Personal Website: https://web.mit.edu/~blengeri/www/"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cryo-ET Segmentation with Stable Diffusion Foundation Models",
+      "summary": "Unsupervised multi-scale segmentation of cellular cryo-electron tomograms using stable diffusion foundation models for high-resolution biological structure reconstruction.",
+      "highlights": [
+        "CVPR 2025 submission",
+        "Carnegie Mellon University collaboration", 
+        "Foundation model adaptation for 3D biological imaging",
+        "Self-supervised learning techniques"
+      ],
+      "startDate": "2024-06-01",
+      "endDate": "Present",
+      "url": "https://doi.org/10.1101/2025.06.25.661425"
+    },
+    {
+      "name": "NeoScreenix - AI-Powered Breast Cancer Detection",
+      "summary": "Health-tech solution combining semi-supervised learning with multimodal data integration for early breast cancer detection. Evolved into PinkLifeLine startup.",
+      "highlights": [
+        "Johns Hopkins Healthcare Design Competition 2025 Global Champion",
+        "PinkLifeLine startup (Co-Founder & Head of Research)",
+        "Bangladesh National ICT Division funding",
+        "50+ medical professionals network",
+        "Sustainlaunch Labs and Herwill partnerships"
+      ],
+      "startDate": "2024-01-01", 
+      "endDate": "Present",
+      "url": "https://www.herwill.org/"
+    },
+    {
+      "name": "NEUROSKY-EPI: Context-Aware Epilepsy Detection",
+      "summary": "First open single-electrode epilepsy EEG dataset with context-aware deep learning models for real-time brain-computer interface applications.",
+      "highlights": [
+        "NeurIPS 2025 Workshop on Time Series for Health acceptance",
+        "First open-source single-electrode epilepsy EEG dataset",
+        "Context-aware neural networks",
+        "Real-time processing optimization"
+      ],
+      "startDate": "2023-01-01",
+      "endDate": "2025-01-01", 
+      "url": "https://openreview.net/forum?id=RumQSMSRHj"
+    },
+    {
+      "name": "SpectraSentinel: Real-Time Drone Detection System",
+      "summary": "Lightweight dual-stream architecture combining spectral and spatial fusion cues for real-time drone detection, tracking, and payload identification.",
+      "highlights": [
+        "IEEE SPS Video & Image Processing Cup 2025 Global 2nd Runner-up",
+        "Dual-stream spectral-spatial fusion",
+        "Real-time performance optimization",
+        "Lightweight CNN architecture"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2025-01-01",
+      "url": "https://arxiv.org/pdf/2507.22650"
+    },
+    {
+      "name": "Contextualized Machine Learning Research",
+      "summary": "Comprehensive review on contextualized machine learning and its role in creating adaptive, interpretable, and generalizable AI systems with focus on foundation models.",
+      "highlights": [
+        "University of Wisconsin–Madison collaboration",
+        "AdaptInfer framework contribution",
+        "Foundation models interpretability",
+        "Context-aware AI systems development"
+      ],
+      "startDate": "2024-09-01",
+      "endDate": "2025-09-01",
+      "url": "https://github.com/AdaptInfer/context-review"
+    }
+  ]
+}

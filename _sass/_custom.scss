@@ -1,0 +1,423 @@
+/*******************************************************************************
+ * Royal Bluish Design System
+ * A sophisticated, elegant design system with consistent styling
+ ******************************************************************************/
+
+// Core Colors
+$royal-blue: #4a90e2;
+$royal-blue-dark: #2c5aa0;
+$royal-blue-light: #6b8cbe;
+$royal-blue-ultralight: #e8f0f8;
+$royal-blue-deep: #0076df;
+$royal-blue-deeper: #005bb8;
+
+// Gradients
+$gradient-blue: linear-gradient(135deg, $royal-blue 0%, $royal-blue-dark 100%);
+$gradient-bg-light: linear-gradient(135deg, #fafbfc 0%, #f5f8fb 100%);
+$gradient-bg-hover: linear-gradient(135deg, #ffffff 0%, #f9fbfd 100%);
+$gradient-divider: linear-gradient(to right, transparent, $royal-blue, transparent);
+
+// Shadows
+$shadow-sm: 0 2px 8px rgba($royal-blue, 0.06);
+$shadow-md: 0 8px 24px rgba($royal-blue, 0.12);
+$shadow-lg: 0 12px 32px rgba($royal-blue, 0.18);
+
+// Typography
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$letter-spacing-tight: -0.5px;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.5px;
+$letter-spacing-wider: 1.2px;
+
+// Transitions
+$transition-fast: all 0.2s ease;
+$transition-normal: all 0.3s ease;
+$transition-slow: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 2.5rem;
+$spacing-xxl: 3rem;
+
+// Repository card theme-sensitive styling
+.royal-repo-card {
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  
+  // Light theme styling
+  background: linear-gradient(135deg, #fafbfc 0%, #f5f8fb 100%);
+  border: 1px solid #e8f0f8;
+  box-shadow: 0 2px 8px rgba($royal-blue, 0.06);
+  
+  // Dark theme styling
+  html[data-theme="dark"] & {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border: 1px solid #404040;
+    box-shadow: 0 2px 8px rgba($royal-blue, 0.2);
+  }
+  
+  // Hover effects
+  &:hover {
+    border-color: #{$royal-blue} !important;
+    transform: translateY(-4px) !important;
+    
+    // Light theme hover
+    box-shadow: 0 8px 32px rgba($royal-blue, 0.15) !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f9fbfd 100%) !important;
+    
+    // Dark theme hover
+    html[data-theme="dark"] & {
+      box-shadow: 0 8px 32px rgba($royal-blue, 0.3) !important;
+      background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%) !important;
+    }
+    
+    img {
+      transform: scale(1.02) !important;
+    }
+  }
+}
+
+// Legacy support for existing .repo class
+.repo:hover {
+  border-color: #{$royal-blue} !important;
+  box-shadow: 0 8px 32px rgba($royal-blue, 0.15) !important;
+  transform: translateY(-4px) !important;
+  background: #{$gradient-bg-hover} !important;
+  
+  img {
+    transform: scale(1.02) !important;
+  }
+}
+
+// Border Radius
+$border-radius-sm: 6px;
+$border-radius-md: 10px;
+$border-radius-lg: 12px;
+$border-radius-pill: 50px;
+
+// Card Design
+.royal-card {
+  border-radius: $border-radius-lg;
+  padding: $spacing-xl;
+  margin-bottom: $spacing-lg;
+  transition: $transition-slow;
+  position: relative;
+  overflow: hidden;
+  
+  // Light theme styling
+  background: $gradient-bg-light;
+  border: 1px solid $royal-blue-ultralight;
+  box-shadow: $shadow-sm;
+  
+  // Dark theme styling
+  html[data-theme="dark"] & {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border: 1px solid #404040;
+    box-shadow: 0 2px 8px rgba($royal-blue, 0.2);
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: $gradient-blue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: $transition-slow;
+  }
+  
+  &:hover {
+    border-color: $royal-blue;
+    transform: translateY(-4px);
+    
+    // Light theme hover
+    box-shadow: $shadow-md;
+    background: $gradient-bg-hover;
+    
+    // Dark theme hover
+    html[data-theme="dark"] & {
+      box-shadow: 0 8px 24px rgba($royal-blue, 0.3);
+      background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+    }
+    
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.royal-card-title {
+  font-size: 1.6rem;
+  font-weight: $font-weight-semibold;
+  color: $royal-blue-dark;
+  margin-bottom: $spacing-sm;
+  letter-spacing: $letter-spacing-tight;
+}
+
+.royal-card-subtitle {
+  font-size: 0.95rem;
+  color: $royal-blue-light;
+  font-weight: $font-weight-medium;
+  margin-bottom: $spacing-md;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-wider;
+}
+
+.royal-card-content {
+  line-height: 1.85;
+  color: var(--global-text-color);
+  margin-bottom: $spacing-md;
+}
+
+// Highlight Box
+.royal-highlight {
+  background: linear-gradient(135deg, rgba($royal-blue, 0.08), rgba($royal-blue-dark, 0.05));
+  border-left: 3px solid $royal-blue;
+  padding: $spacing-md;
+  border-radius: $border-radius-sm;
+  margin: $spacing-md 0;
+  font-style: italic;
+  color: var(--global-text-color);
+}
+
+// List Styling
+.royal-list {
+  list-style: none;
+  padding: 0;
+  margin: $spacing-md 0;
+  
+  li {
+    padding: 0.8rem 0 0.8rem 2rem;
+    position: relative;
+    color: var(--global-text-color);
+    line-height: 1.8;
+    transition: $transition-normal;
+    
+    &:before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: $royal-blue;
+      font-weight: $font-weight-semibold;
+    }
+    
+    &:hover {
+      padding-left: 2.5rem;
+      color: $royal-blue;
+    }
+  }
+}
+
+// Section Divider
+.royal-divider {
+  height: 1px;
+  background: $gradient-divider;
+  margin: 3.5rem 0;
+  opacity: 0.3;
+}
+
+// Link Styling
+a.royal-link {
+  color: $royal-blue-deep;
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: $transition-normal;
+  
+  &:hover {
+    color: $royal-blue-deeper;
+    border-bottom-color: $royal-blue-deep;
+    text-decoration: none;
+  }
+}
+
+// Buttons
+.royal-button {
+  display: inline-block;
+  background: $gradient-blue;
+  color: white;
+  font-weight: $font-weight-medium;
+  padding: 0.6rem 1.2rem;
+  border-radius: $border-radius-pill;
+  border: none;
+  transition: $transition-normal;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba($royal-blue-dark, 0.2);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($royal-blue-dark, 0.3);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+// Badge
+.royal-badge {
+  display: inline-block;
+  background: $gradient-blue;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  border-radius: $border-radius-pill;
+  font-size: 0.85rem;
+  font-weight: $font-weight-semibold;
+  letter-spacing: $letter-spacing-wide;
+  margin-left: 0.5rem;
+}
+
+// Navigation Improvements
+.navbar-nav {
+  .nav-item {
+    margin: 0 0.2rem;
+    
+    .nav-link {
+      padding: 0.5rem 1rem;
+      border-radius: $border-radius-pill;
+      transition: $transition-normal;
+      
+      &:hover {
+        background-color: rgba($royal-blue, 0.1);
+      }
+    }
+    
+    &.active .nav-link {
+      color: $royal-blue;
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+// Publications Styling
+.publications {
+  .row {
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-md;
+    border-bottom: 1px solid $royal-blue-ultralight;
+    transition: $transition-normal;
+    
+    &:hover {
+      background: linear-gradient(135deg, rgba($royal-blue, 0.02), rgba($royal-blue-dark, 0.01));
+      transform: translateY(-2px);
+    }
+    
+    .title {
+      font-size: 1.2rem;
+      font-weight: $font-weight-medium;
+      color: $royal-blue-dark;
+      margin-bottom: $spacing-xs;
+      transition: $transition-normal;
+    }
+    
+    .author {
+      margin-bottom: $spacing-xs;
+      
+      em {
+        font-weight: $font-weight-semibold;
+        color: $royal-blue;
+        font-style: normal;
+      }
+    }
+    
+    .periodical {
+      font-style: italic;
+      margin-bottom: $spacing-xs;
+    }
+    
+    .links {
+      .btn {
+        background-color: $royal-blue-ultralight;
+        color: $royal-blue-dark;
+        border-radius: $border-radius-pill;
+        margin-right: $spacing-xs;
+        transition: $transition-normal;
+        
+        &:hover {
+          background-color: $royal-blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Projects Styling
+.projects {
+  .card {
+    border: 1px solid $royal-blue-ultralight;
+    border-radius: $border-radius-lg;
+    transition: $transition-slow;
+    overflow: hidden;
+    height: 100%;
+    
+    &:hover {
+      border-color: $royal-blue;
+      box-shadow: $shadow-md;
+      transform: translateY(-4px);
+    }
+    
+    .card-img-top {
+      transition: $transition-slow;
+      
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+    
+    .card-body {
+      padding: $spacing-lg;
+      
+      .card-title {
+        color: $royal-blue-dark;
+        font-weight: $font-weight-semibold;
+        margin-bottom: $spacing-sm;
+      }
+      
+      .card-text {
+        color: var(--global-text-color);
+        margin-bottom: $spacing-md;
+        line-height: 1.7;
+      }
+    }
+  }
+  
+  h2.category {
+    font-size: 1.8rem;
+    font-weight: $font-weight-light;
+    color: $royal-blue;
+    border-bottom: 2px solid $royal-blue-ultralight;
+    padding-bottom: $spacing-sm;
+    margin-bottom: $spacing-lg;
+    margin-top: $spacing-xxl;
+    transition: $transition-normal;
+    
+    &:hover {
+      border-bottom-color: $royal-blue;
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .royal-card {
+    padding: $spacing-lg;
+  }
+  
+  .royal-card-title {
+    font-size: 1.3rem;
+  }
+}

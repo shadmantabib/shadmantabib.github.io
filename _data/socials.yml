@@ -1,0 +1,36 @@
+# this file contains the social media links and usernames of the author
+# the commented lines are the default social media links supported by the template
+# the socials will be displayed in the order they are defined here
+
+email: shadmantabib2002@gmail.com # your email address
+github_username: shadmantabib # your GitHub user name
+linkedin_username: hm-shadman-tabib # your LinkedIn user name
+scholar_userid: # your Google Scholar ID (add if you have one)
+# orcid_id: # your ORCID ID
+# research_gate_profile: # your profile on ResearchGate
+rss_icon: false # comment this line to hide the RSS icon
+# kaggle_id: # your kaggle id
+# twitter_username: # your Twitter username
+# x_username: # your X handle
+
+# Additional links
+# acm_id: # your dl.acm.org/profile/id
+# ieee_id: # your ieeexplore.ieee.org/author/id
+# dblp_url: # your DBLP profile url
+# semanticscholar_id: # your Semantic Scholar ID
+# inspirehep_id: # Inspire HEP author ID
+# scopus_id: # your profile on Scopus
+
+# Other social media
+# facebook_id: # your facebook id
+# instagram_id: # your instagram id
+# medium_username: # your Medium username
+# youtube_id: # your youtube channel id
+# discord_id: # your discord id
+# telegram_username: # your Telegram user name
+
+# Custom portfolio link
+custom_social:
+  logo: 🌐 # can be png, svg, jpg, or emoji
+  title: Portfolio Website
+  url: https://shadmantabib.github.io/

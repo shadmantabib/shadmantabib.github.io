@@ -1,0 +1,11 @@
+---
+layout: cv
+permalink: /cv/
+title: resume
+nav: true
+nav_order: 3
+cv_pdf: shadman_tabib_cv.pdf # your CV PDF file
+description: Comprehensive curriculum vitae showcasing research experience, publications, awards, and technical expertise in computational biology and machine learning.
+toc:
+  sidebar: left
+---

@@ -3,6 +3,7 @@
 ## ✅ Completed Customizations
 
 ### 1. Personal Information (`_config.yml`)
+
 - ✅ Updated name: H.M. Shadman Tabib
 - ✅ Changed description to highlight Computational Biology & AI research
 - ✅ Updated URL to: https://shadmantabib.github.io
@@ -11,10 +12,12 @@
 - ✅ Configured Jekyll Scholar with your name
 
 ### 2. Profile Photo
+
 - ✅ Copied formal.jpg to assets/img/prof_pic.jpg
 - ✅ Set as profile picture in about page
 
 ### 3. About Page (`_pages/about.md`)
+
 - ✅ Updated subtitle with BUET affiliation
 - ✅ Wrote comprehensive biography highlighting:
   - Research interests (Computational Biology, Computer Vision, AI for Health)
@@ -25,13 +28,16 @@
 - ✅ Created highlights section with emoji markers
 
 ### 4. Social Media Links (`_data/socials.yml`)
+
 - ✅ Email: shadmantabib2002@gmail.com
 - ✅ GitHub: shadmantabib
 - ✅ LinkedIn: hm-shadman-tabib
 - ✅ Custom portfolio link
 
 ### 5. Publications (`_bibliography/papers.bib`)
+
 Added all 10+ publications with proper BibTeX formatting:
+
 - ✅ Cryo-ET Diffusion (CVPR submission)
 - ✅ Macromolecule Localization (Briefings in Bioinformatics - Accepted)
 - ✅ NEUROSKY-EPI (NeurIPS 2025 Workshop - Accepted)
@@ -44,37 +50,45 @@ Added all 10+ publications with proper BibTeX formatting:
 - ✅ LLM Judge (arXiv)
 
 ### 6. Project Pages
+
 Created 5 detailed project pages:
 
 #### `_projects/1_project.md` - Cryo-ET Segmentation
+
 - Unsupervised multi-scale segmentation with stable diffusion
 - CMU collaboration with Dr. Min Xu
 - Category: Computational Biology
 
 #### `_projects/2_project.md` - NeoScreenix
+
 - JHU 2025 Global Champion project
 - PinkLifeLine startup
 - Semi-supervised breast cancer detection
 - Category: Medical Imaging
 
 #### `_projects/3_project.md` - NEUROSKY-EPI
+
 - First open single-electrode epilepsy EEG dataset
 - Context-aware deep learning
 - NeurIPS 2025 Workshop acceptance
 - Category: Brain-Computer Interface
 
 #### `_projects/4_project.md` - Contextualized ML
+
 - UW-Madison collaboration
 - Review on adaptive AI systems
 - Category: Machine Learning
 
 #### `_projects/5_project.md` - SpectraSentinel
+
 - IEEE VIP Cup 2025 2nd Runner-up
 - Real-time drone detection
 - Category: Computer Vision
 
 ### 7. CV Data (`_data/cv.yml`)
+
 Comprehensive CV with:
+
 - ✅ General information
 - ✅ Research interests
 - ✅ Education (BUET)
@@ -87,7 +101,9 @@ Comprehensive CV with:
 - ✅ Media coverage
 
 ### 8. News Announcements
+
 Created 5 news items (`_news/announcement_*.md`):
+
 - ✅ JHU Global Champion announcement with media links
 - ✅ IEEE VIP Cup 2nd Runner-up
 - ✅ NeurIPS Workshop acceptance
@@ -97,6 +113,7 @@ Created 5 news items (`_news/announcement_*.md`):
 ## 📁 Files Modified/Created
 
 ### Modified:
+
 1. `_config.yml` - Site configuration
 2. `_pages/about.md` - About page
 3. `_data/socials.yml` - Social media links
@@ -104,6 +121,7 @@ Created 5 news items (`_news/announcement_*.md`):
 5. `_bibliography/papers.bib` - Publications
 
 ### Created:
+
 1. `assets/img/prof_pic.jpg` - Profile photo
 2. `_projects/1_project.md` - Cryo-ET project
 3. `_projects/2_project.md` - NeoScreenix project
@@ -119,22 +137,27 @@ Created 5 news items (`_news/announcement_*.md`):
 ## 🚀 Next Steps to Run the Website
 
 ### Option 1: Using Docker (Recommended)
+
 ```bash
 cd al-folio
 docker compose pull
 docker compose up
 ```
+
 Then visit: `http://localhost:8080`
 
 ### Option 2: Using Jekyll (if Ruby is properly installed)
+
 ```bash
 cd al-folio
 bundle install
 bundle exec jekyll serve
 ```
+
 Then visit: `http://localhost:4000`
 
 ### Option 3: Deploy to GitHub Pages
+
 1. Push to a repository named `shadmantabib.github.io`
 2. Enable GitHub Pages in repository settings
 3. Select `gh-pages` branch as source
@@ -181,4 +204,3 @@ Then visit: `http://localhost:4000`
 **Website is ready to deploy! 🎉**
 
 For any issues or questions, refer to the [al-folio documentation](https://github.com/alshedivat/al-folio).
-

@@ -56,4 +56,4 @@ SpectraSentinel is a novel dual-stream architecture that combines spectral and s
 
 ---
 
-*SpectraSentinel represents a significant advancement in practical, deployable drone detection systems.*
+_SpectraSentinel represents a significant advancement in practical, deployable drone detection systems._

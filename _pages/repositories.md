@@ -17,6 +17,7 @@ nav_order: 5
 </div>
 
 {% if site.data.repositories.github_users %}
+
 <div class="royal-card">
   <h2 class="subsection-title-posh">GitHub Profile</h2>
   <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center" style="margin-top: 1.5rem;">
@@ -27,6 +28,7 @@ nav_order: 5
 </div>
 
 {% if site.repo_trophies.enabled %}
+
 <div class="royal-card">
   <h2 class="subsection-title-posh">GitHub Achievements</h2>
   {% for user in site.data.repositories.github_users %}
@@ -42,6 +44,7 @@ nav_order: 5
 {% endif %}
 
 {% if site.data.repositories.github_repos %}
+
 <div class="royal-card">
   <h2 class="subsection-title-posh">Prominent Repositories</h2>
   <p class="royal-card-content" style="margin-bottom: 2rem; color: #6b8cbe;">

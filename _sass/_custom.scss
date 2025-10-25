@@ -55,34 +55,34 @@ $spacing-xxl: 3rem;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
-  
+
   // Light theme styling
   background: linear-gradient(135deg, #fafbfc 0%, #f5f8fb 100%);
   border: 1px solid #e8f0f8;
   box-shadow: 0 2px 8px rgba($royal-blue, 0.06);
-  
+
   // Dark theme styling
   html[data-theme="dark"] & {
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
     border: 1px solid #404040;
     box-shadow: 0 2px 8px rgba($royal-blue, 0.2);
   }
-  
+
   // Hover effects
   &:hover {
     border-color: #{$royal-blue} !important;
     transform: translateY(-4px) !important;
-    
+
     // Light theme hover
     box-shadow: 0 8px 32px rgba($royal-blue, 0.15) !important;
     background: linear-gradient(135deg, #ffffff 0%, #f9fbfd 100%) !important;
-    
+
     // Dark theme hover
     html[data-theme="dark"] & {
       box-shadow: 0 8px 32px rgba($royal-blue, 0.3) !important;
       background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%) !important;
     }
-    
+
     img {
       transform: scale(1.02) !important;
     }
@@ -95,7 +95,7 @@ $spacing-xxl: 3rem;
   box-shadow: 0 8px 32px rgba($royal-blue, 0.15) !important;
   transform: translateY(-4px) !important;
   background: #{$gradient-bg-hover} !important;
-  
+
   img {
     transform: scale(1.02) !important;
   }
@@ -115,21 +115,21 @@ $border-radius-pill: 50px;
   transition: $transition-slow;
   position: relative;
   overflow: hidden;
-  
+
   // Light theme styling
   background: $gradient-bg-light;
   border: 1px solid $royal-blue-ultralight;
   box-shadow: $shadow-sm;
-  
+
   // Dark theme styling
   html[data-theme="dark"] & {
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
     border: 1px solid #404040;
     box-shadow: 0 2px 8px rgba($royal-blue, 0.2);
   }
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -140,21 +140,21 @@ $border-radius-pill: 50px;
     transform-origin: left;
     transition: $transition-slow;
   }
-  
+
   &:hover {
     border-color: $royal-blue;
     transform: translateY(-4px);
-    
+
     // Light theme hover
     box-shadow: $shadow-md;
     background: $gradient-bg-hover;
-    
+
     // Dark theme hover
     html[data-theme="dark"] & {
       box-shadow: 0 8px 24px rgba($royal-blue, 0.3);
       background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
     }
-    
+
     &::before {
       transform: scaleX(1);
     }
@@ -200,22 +200,22 @@ $border-radius-pill: 50px;
   list-style: none;
   padding: 0;
   margin: $spacing-md 0;
-  
+
   li {
     padding: 0.8rem 0 0.8rem 2rem;
     position: relative;
     color: var(--global-text-color);
     line-height: 1.8;
     transition: $transition-normal;
-    
+
     &:before {
-      content: '—';
+      content: "—";
       position: absolute;
       left: 0;
       color: $royal-blue;
       font-weight: $font-weight-semibold;
     }
-    
+
     &:hover {
       padding-left: 2.5rem;
       color: $royal-blue;
@@ -238,7 +238,7 @@ a.royal-link {
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: $transition-normal;
-  
+
   &:hover {
     color: $royal-blue-deeper;
     border-bottom-color: $royal-blue-deep;
@@ -258,7 +258,7 @@ a.royal-link {
   transition: $transition-normal;
   text-decoration: none;
   box-shadow: 0 2px 6px rgba($royal-blue-dark, 0.2);
-  
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba($royal-blue-dark, 0.3);
@@ -284,17 +284,17 @@ a.royal-link {
 .navbar-nav {
   .nav-item {
     margin: 0 0.2rem;
-    
+
     .nav-link {
       padding: 0.5rem 1rem;
       border-radius: $border-radius-pill;
       transition: $transition-normal;
-      
+
       &:hover {
         background-color: rgba($royal-blue, 0.1);
       }
     }
-    
+
     &.active .nav-link {
       color: $royal-blue;
       font-weight: $font-weight-medium;
@@ -309,12 +309,12 @@ a.royal-link {
     padding-bottom: $spacing-md;
     border-bottom: 1px solid $royal-blue-ultralight;
     transition: $transition-normal;
-    
+
     &:hover {
       background: linear-gradient(135deg, rgba($royal-blue, 0.02), rgba($royal-blue-dark, 0.01));
       transform: translateY(-2px);
     }
-    
+
     .title {
       font-size: 1.2rem;
       font-weight: $font-weight-medium;
@@ -322,22 +322,22 @@ a.royal-link {
       margin-bottom: $spacing-xs;
       transition: $transition-normal;
     }
-    
+
     .author {
       margin-bottom: $spacing-xs;
-      
+
       em {
         font-weight: $font-weight-semibold;
         color: $royal-blue;
         font-style: normal;
       }
     }
-    
+
     .periodical {
       font-style: italic;
       margin-bottom: $spacing-xs;
     }
-    
+
     .links {
       .btn {
         background-color: $royal-blue-ultralight;
@@ -345,7 +345,7 @@ a.royal-link {
         border-radius: $border-radius-pill;
         margin-right: $spacing-xs;
         transition: $transition-normal;
-        
+
         &:hover {
           background-color: $royal-blue;
           color: white;
@@ -363,30 +363,30 @@ a.royal-link {
     transition: $transition-slow;
     overflow: hidden;
     height: 100%;
-    
+
     &:hover {
       border-color: $royal-blue;
       box-shadow: $shadow-md;
       transform: translateY(-4px);
     }
-    
+
     .card-img-top {
       transition: $transition-slow;
-      
+
       &:hover {
         transform: scale(1.03);
       }
     }
-    
+
     .card-body {
       padding: $spacing-lg;
-      
+
       .card-title {
         color: $royal-blue-dark;
         font-weight: $font-weight-semibold;
         margin-bottom: $spacing-sm;
       }
-      
+
       .card-text {
         color: var(--global-text-color);
         margin-bottom: $spacing-md;
@@ -394,7 +394,7 @@ a.royal-link {
       }
     }
   }
-  
+
   h2.category {
     font-size: 1.8rem;
     font-weight: $font-weight-light;
@@ -404,7 +404,7 @@ a.royal-link {
     margin-bottom: $spacing-lg;
     margin-top: $spacing-xxl;
     transition: $transition-normal;
-    
+
     &:hover {
       border-bottom-color: $royal-blue;
     }
@@ -416,7 +416,7 @@ a.royal-link {
   .royal-card {
     padding: $spacing-lg;
   }
-  
+
   .royal-card-title {
     font-size: 1.3rem;
   }

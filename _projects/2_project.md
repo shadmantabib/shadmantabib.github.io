@@ -28,7 +28,8 @@ NeoScreenix is an innovative health-tech solution that combines semi-supervised 
 🏆 **Global Champion** - Johns Hopkins Healthcare Design Competition 2025  
 🚀 **Startup Founded** - PinkLifeLine (Co-Founder & Head of Research)  
 💰 **Funding** - Bangladesh National ICT Division  
-🤝 **Partnerships**: 
+🤝 **Partnerships**:
+
 - [Sustainlaunch Labs](https://www.sustainlaunchlabs.com/) (Global innovation accelerator)
 - [Herwill](https://www.herwill.org/) (Women's empowerment & digital inclusion)
 
@@ -53,4 +54,4 @@ The project aims to revolutionize early breast cancer detection, particularly in
 
 ---
 
-*PinkLifeLine is committed to making breast cancer screening accessible, affordable, and accurate for women worldwide.*
+_PinkLifeLine is committed to making breast cancer screening accessible, affordable, and accurate for women worldwide._

@@ -35,6 +35,7 @@ NEUROSKY-EPI addresses a critical gap in epilepsy research by providing the firs
 ### Clinical Impact
 
 The single-electrode approach significantly reduces:
+
 - Equipment complexity and cost
 - Setup time for patients
 - Barriers to continuous monitoring
@@ -60,4 +61,4 @@ This makes epilepsy monitoring more accessible, especially in resource-constrain
 
 ---
 
-*NEUROSKY-EPI aims to democratize epilepsy monitoring through accessible technology and open science.*
+_NEUROSKY-EPI aims to democratize epilepsy monitoring through accessible technology and open science._

@@ -29,6 +29,7 @@ Cryo-electron tomography provides 3D visualizations of cellular structures at ne
 ### Technical Approach
 
 Our approach leverages:
+
 - Stable diffusion foundation models adapted for 3D biological imaging
 - Self-supervised learning techniques for feature extraction
 - Multi-scale analysis frameworks for hierarchical structure detection
@@ -41,4 +42,4 @@ Our approach leverages:
 
 ---
 
-*This work represents a significant step forward in automated biological image analysis, with potential applications in structural biology, drug discovery, and cellular mechanism understanding.*
+_This work represents a significant step forward in automated biological image analysis, with potential applications in structural biology, drug discovery, and cellular mechanism understanding._

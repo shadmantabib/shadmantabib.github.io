@@ -17,7 +17,7 @@ My research journey began in my second year at BUET with [Prof. Dr. K.M. Ariful 
 
 **Key Learning:** The power of simulation in understanding complex socioeconomic effects on public health.
 
-**Publication:** [Study on Locomotive Epidemic Dynamics in a Stochastic Spatio-Temporal Simulation Model on a Multiplex Network](https://arxiv.org/pdf/2509.21017) — *arXiv, 2025*
+**Publication:** [Study on Locomotive Epidemic Dynamics in a Stochastic Spatio-Temporal Simulation Model on a Multiplex Network](https://arxiv.org/pdf/2509.21017) — _arXiv, 2025_
 
 ---
 
@@ -27,7 +27,7 @@ Working with [Prof. Dr. M. Sohel Rahman](https://scholar.google.com/citations?us
 
 **Key Learning:** The critical importance of building ML systems that are actually safe for human health data.
 
-**Publication:** [Breast Cancer Detection Using Semi-Supervised Learning: Multimodal Data Integration and Comparative Demographic Analysis](https://www.researchgate.net/profile/Mst-Fahmida-Naznin/publication/386218434_Breast_Cancer_Detection_Using_Semi-Supervised_LearningMultimodal_Data_Integration_and_Comparative_Demographic_Analysis/links/67491dbe876bd177782c491f/Breast-Cancer-Detection-Using-Semi-Supervised-LearningMultimodal-Data-Integration-and-Comparative-Demographic-Analysis.pdf) — *NSyS 2024*
+**Publication:** [Breast Cancer Detection Using Semi-Supervised Learning: Multimodal Data Integration and Comparative Demographic Analysis](https://www.researchgate.net/profile/Mst-Fahmida-Naznin/publication/386218434_Breast_Cancer_Detection_Using_Semi-Supervised_LearningMultimodal_Data_Integration_and_Comparative_Demographic_Analysis/links/67491dbe876bd177782c491f/Breast-Cancer-Detection-Using-Semi-Supervised-LearningMultimodal-Data-Integration-and-Comparative-Demographic-Analysis.pdf) — _NSyS 2024_
 
 In parallel, I worked with [Prof. Dr. M. Saifur Rahman](https://scholar.google.com/citations?user=rUtx9hEAAAAJ&hl=en) on **Fair-RAG-IM**, a bias-aware retrieval-augmented generation framework for clinical decision support, focusing on interpretability and equitable medical decision-making.
 
@@ -40,16 +40,16 @@ In parallel, I worked with [Prof. Dr. M. Saifur Rahman](https://scholar.google.c
 In mid-2024, I began collaborating remotely with the [Xu Lab](https://scholar.google.com/citations?user=Y3Cqt0cAAAAJ&hl=en) at Carnegie Mellon University. My work focuses on **unsupervised Cryo-ET segmentation** and macromolecule localization in extremely crowded and noisy cellular tomograms.
 
 **Research Activities:**
+
 - Denoising and preprocessing 3D tomograms
 - Particle picking under minimal labeling
 - Building training-free or weakly supervised segmentation pipelines
 - High-resolution biological structure reconstruction
 
 **Key Publications:**
-- [Unsupervised Multi-scale Segmentation of Cellular Cryo-electron Tomograms with Stable Diffusion Foundation Model](https://doi.org/10.1101/2025.06.25.661425) — *Submitted to CVPR 2025*
-- [Localization of Macromolecules in Crowded Cellular Cryo-electron Tomograms from Extremely Sparse Labels](https://www.biorxiv.org/content/10.1101/2024.11.04.620735v2) — *Accepted at Briefings in Bioinformatics, 2025*
 
-
+- [Unsupervised Multi-scale Segmentation of Cellular Cryo-electron Tomograms with Stable Diffusion Foundation Model](https://doi.org/10.1101/2025.06.25.661425) — _Submitted to CVPR 2025_
+- [Localization of Macromolecules in Crowded Cellular Cryo-electron Tomograms from Extremely Sparse Labels](https://www.biorxiv.org/content/10.1101/2024.11.04.620735v2) — _Accepted at Briefings in Bioinformatics, 2025_
 
 More recently, I started collaborating with [Dr. Muyuan Chen](https://scholar.google.com/citations?user=1EiYIlkAAAAJ&hl=en) at Stanford University on **PFIB tomography** of biological samples, particularly Hydra tissue. This work involves segmentation and structural analysis of high-resolution PFIB volumes to interpret morphology and organization from 3D datasets.
 
@@ -62,11 +62,12 @@ More recently, I started collaborating with [Dr. Muyuan Chen](https://scholar.go
 Since late 2024, I've been working with [Dr. Ben Lengerich](https://web.mit.edu/~blengeri/www/) at the University of Wisconsin–Madison on a comprehensive review of **contextualized machine learning**. The core insight is that many models assume one global rule for everyone, but real-life decisions depend on context: patient history, environment, measurement conditions, and more.
 
 I contribute to **AdaptInfer**, which aims to build models that can:
+
 - Adapt to shifting contexts
 - Explain behavior instead of acting like black boxes
 - Provide interpretable and contextual decision-making
 
-**Publication:** [Contextualized Machine Learning: Towards Adaptive, Interpretable, and Generalizable AI Systems](https://github.com/AdaptInfer/context-review) — *UW–Madison Research Project, 2025*
+**Publication:** [Contextualized Machine Learning: Towards Adaptive, Interpretable, and Generalizable AI Systems](https://github.com/AdaptInfer/context-review) — _UW–Madison Research Project, 2025_
 
 ---
 
@@ -76,13 +77,13 @@ I contribute to **AdaptInfer**, which aims to build models that can:
 
 With [Prof. Dr. A.B.M. Alim Al Islam](https://scholar.google.com/citations?user=K-AIPzQAAAAJ&hl=en), I developed **NEUROSKY-EPI**, the first open single-electrode epilepsy EEG dataset with context-aware modeling for real-time brain–computer interface applications.
 
-**Publication:** [NEUROSKY-EPI: The First Open Single-Electrode Epilepsy EEG Dataset with Context-Aware Modeling](https://openreview.net/forum?id=RumQSMSRHj) — *NeurIPS 2025 Workshop on Time Series for Health*
+**Publication:** [NEUROSKY-EPI: The First Open Single-Electrode Epilepsy EEG Dataset with Context-Aware Modeling](https://openreview.net/forum?id=RumQSMSRHj) — _NeurIPS 2025 Workshop on Time Series for Health_
 
 #### Real-Time Drone Detection
 
 Working with [Prof. Dr. Ch. Md. Rakin Haider](https://scholar.google.com/citations?user=MebSxEMAAAAJ&hl=en), I contributed to **SpectraSentinel**, a dual-stream, lightweight real-time drone detection and tracking system combining spectral and spatial fusion cues.
 
-**Publication:** [SpectraSentinel: Lightweight Dual-Stream Real-Time Drone Detection, Tracking and Payload Identification](https://arxiv.org/pdf/2507.22650) — *arXiv, 2025*
+**Publication:** [SpectraSentinel: Lightweight Dual-Stream Real-Time Drone Detection, Tracking and Payload Identification](https://arxiv.org/pdf/2507.22650) — _arXiv, 2025_
 
 ---
 
@@ -103,12 +104,14 @@ My undergraduate thesis is jointly supervised by [Prof. Dr. M. Sohel Rahman](htt
 Co-founded [PinkLifeLine](https://www.herwill.org/) as a health-tech startup emerging from our **NeoScreenix** project, which won the **Global Champion award** at the Johns Hopkins Healthcare Design Competition 2025.
 
 **Key Achievements:**
+
 - Funded by Bangladesh National ICT Division
 - Partnerships with [Sustainlaunch Labs](https://www.sustainlaunchlabs.com/) (global innovation accelerator) and [Herwill](https://www.herwill.org/) (women's empowerment organization)
 - Leading a 50+ medical professionals network
 - Developing ML clinical data pipelines and screening workflows
 
 **Media Coverage:**
+
 - [Daily Star](https://www.thedailystar.net/news/bangladesh/news/buet-team-wins-1st-place-johns-hopkins-healthcare-design-competition-3884801)
 - [TBS News](https://www.tbsnews.net/features/pursuit/neoscreenix-how-buet-students-early-breast-cancer-detection-technology-could-make)
 - [UNB News](https://unb.com.bd/category/Bangladesh/a-moment-of-global-recognition-for-local-brilliance-of-bangladesh-in-digital-health-care/158731)
@@ -143,6 +146,7 @@ Research should ultimately serve human health and scientific understanding. Whet
 I continue to collaborate with groups at Carnegie Mellon University, University of Wisconsin–Madison, Stanford University, and BUET. My long-term goal is to build machine learning systems that can both interpret complex biological data and support real decision-making in health and science, while being aware of bias, context, and uncertainty.
 
 **Current Active Projects:**
+
 - Cryo-ET segmentation with foundation models (CMU)
 - PFIB tomography analysis (Stanford)
 - Contextualized ML review and AdaptInfer framework (UW-Madison)
@@ -151,6 +155,6 @@ I continue to collaborate with groups at Carnegie Mellon University, University 
 
 ---
 
-*"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science."*
+_"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science."_
 
 **— Albert Einstein**

@@ -60,12 +60,14 @@ I am currently collaborating with leading research groups on cutting-edge projec
 ## Recognition & Impact
 
 **Awards & Achievements**
+
 - **Global Champion** — Johns Hopkins Healthcare Design Competition 2025 (Team NeoScreenix)
 - **Global 2nd Runner-up** — IEEE SPS Video & Image Processing Cup 2025
 - **Dean's Merit Scholarship** — BUET (sustained academic excellence)
 - **10+ Publications** — NeurIPS Workshops, Briefings in Bioinformatics, IJLNC, and more
 
 **Entrepreneurship**
+
 - **Co-Founder & Head of Research** — [PinkLifeLine](https://www.herwill.org/) (Health-tech startup funded by Bangladesh ICT Division)
 - Leading a network of 50+ medical professionals
 - Developing AI-powered clinical screening pipelines

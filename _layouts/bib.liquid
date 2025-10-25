@@ -1,6 +1,9 @@
 ---
 ---
-<div class="row" style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e8f0f8; transition: all 0.3s ease; border-radius: 10px; padding: 1.5rem;">
+<div
+  class="row"
+  style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e8f0f8; transition: all 0.3s ease; border-radius: 10px; padding: 1.5rem;"
+>
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -23,7 +26,9 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100" style="background: linear-gradient(135deg, #4a90e2 0%, #2c5aa0 100%); color: white; font-weight: 600;">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100" style="background: linear-gradient(135deg, #4a90e2 0%, #2c5aa0 100%); color: white; font-weight: 600;">
+            {{- entry.abbr -}}
+          </abbr>
         {% endif %}
       {% endif %}
     </div>
@@ -32,7 +37,9 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title" style="font-size: 1.2rem; font-weight: 500; color: #2c5aa0; margin-bottom: 0.5rem; transition: all 0.3s ease;">{{ entry.title }}</div>
+    <div class="title" style="font-size: 1.2rem; font-weight: 500; color: #2c5aa0; margin-bottom: 0.5rem; transition: all 0.3s ease;">
+      {{ entry.title }}
+    </div>
     <!-- Author -->
     <div class="author" style="margin-bottom: 0.5rem;">
       {% assign author_array_size = entry.author_array | size %}
@@ -172,70 +179,185 @@
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">
+        <a
+          class="award btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+        >
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Abs</a>
+        <a
+          class="abstract btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >Abs</a
+        >
       {% endif %}
       {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">DOI</a>
+        <a
+          href="https://doi.org/{{ entry.doi }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >DOI</a
+        >
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">arXiv</a>
+        <a
+          href="http://arxiv.org/abs/{{ entry.arxiv }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >arXiv</a
+        >
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Bib</a>
+        <a
+          class="bibtex btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >Bib</a
+        >
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">HTML</a>
+          <a
+            href="{{ entry.html }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >HTML</a
+          >
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">HTML</a>
+          <a
+            href="{{ entry.html | prepend: '/assets/html/' | relative_url }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >HTML</a
+          >
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">PDF</a>
+          <a
+            href="{{ entry.pdf }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >PDF</a
+          >
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">PDF</a>
+          <a
+            href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >PDF</a
+          >
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Supp</a>
+          <a
+            href="{{ entry.supp }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >Supp</a
+          >
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Supp</a>
+          <a
+            href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >Supp</a
+          >
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
-        <a class="abstract btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Video</a>
+        <a
+          class="abstract btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >Video</a
+        >
       {% elsif entry.video %}
-        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Video</a>
+        <a
+          href="{{ entry.video }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >Video</a
+        >
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Blog</a>
+        <a
+          href="{{ entry.blog }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >Blog</a
+        >
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Code</a>
+        <a
+          href="{{ entry.code }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >Code</a
+        >
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Poster</a>
+          <a
+            href="{{ entry.poster }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >Poster</a
+          >
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Poster</a>
+          <a
+            href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >Poster</a
+          >
         {% endif %}
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Slides</a>
+          <a
+            href="{{ entry.slides }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >Slides</a
+          >
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Slides</a>
+          <a
+            href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}"
+            class="btn btn-sm z-depth-0"
+            role="button"
+            style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+            >Slides</a
+          >
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;">Website</a>
+        <a
+          href="{{ entry.website }}"
+          class="btn btn-sm z-depth-0"
+          role="button"
+          style="background-color: #e8f0f8; color: #2c5aa0; border-radius: 50px; margin-right: 0.5rem; transition: all 0.3s ease; font-weight: 500;"
+          >Website</a
+        >
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

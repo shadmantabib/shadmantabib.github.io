@@ -59,7 +59,11 @@
           <!-- Other pages -->
           <!-- Publications -->
           <li class="nav-item" style="margin: 0 0.2rem;">
-            <a class="nav-link" href="{{ '/publications/' | relative_url }}" style="padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease;">
+            <a
+              class="nav-link"
+              href="{{ '/publications/' | relative_url }}"
+              style="padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease;"
+            >
               publications
             </a>
           </li>
@@ -73,14 +77,22 @@
 
           <!-- Projects -->
           <li class="nav-item" style="margin: 0 0.2rem;">
-            <a class="nav-link" href="{{ '/projects/' | relative_url }}" style="padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease;">
+            <a
+              class="nav-link"
+              href="{{ '/projects/' | relative_url }}"
+              style="padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease;"
+            >
               projects
             </a>
           </li>
 
           <!-- Repositories -->
           <li class="nav-item" style="margin: 0 0.2rem;">
-            <a class="nav-link" href="{{ '/repositories/' | relative_url }}" style="padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease;">
+            <a
+              class="nav-link"
+              href="{{ '/repositories/' | relative_url }}"
+              style="padding: 0.5rem 1rem; border-radius: 50px; transition: all 0.3s ease;"
+            >
               repositories
             </a>
           </li>
@@ -91,13 +103,20 @@
               misc
             </a>
           </li>
-          
+
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
             {% if p.title %}
               <!-- Debug: {{ p.title }} - nav: {{ p.nav }} - order: {{ p.nav_order }} -->
             {% endif %}
-            {% if p.nav and p.autogen == null and p.title != 'projects' and p.title != 'misc' and p.title != 'repositories' and p.title != 'resume' and p.title != 'publications' %}
+            {% if p.nav
+              and p.autogen == null
+              and p.title != 'projects'
+              and p.title != 'misc'
+              and p.title != 'repositories'
+              and p.title != 'resume'
+              and p.title != 'publications'
+            %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}

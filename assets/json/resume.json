@@ -40,9 +40,7 @@
       "startDate": "2025-02-01",
       "endDate": "Present",
       "summary": "Project: Identification of Dengue Breeding Sites through Object Recognition (HE-01-244). Contributing to dengue vector surveillance using deep learning–based object recognition and image analysis for public health applications.",
-      "highlights": [
-        "Deep learning-based object recognition for dengue vector surveillance"
-      ]
+      "highlights": ["Deep learning-based object recognition for dengue vector surveillance"]
     },
     {
       "name": "Carnegie Mellon University (Xu Lab)",
@@ -146,7 +144,7 @@
       "score": "CGPA > 3.75 (Dean's & University Merit Scholarships)",
       "courses": [
         "Machine Learning",
-        "Computer Vision", 
+        "Computer Vision",
         "Bioinformatics",
         "Database Systems",
         "Software Engineering",
@@ -195,7 +193,7 @@
     {
       "title": "Second Runner-up — Bangladesh Mathematical Olympiad (BdMO)",
       "date": "2019-01-01",
-      "awarder": "Bangladesh Mathematical Olympiad Committee", 
+      "awarder": "Bangladesh Mathematical Olympiad Committee",
       "url": "",
       "summary": "Achieved second runner-up position in Bangladesh Mathematical Olympiad 2019–2020."
     },
@@ -291,17 +289,7 @@
       "name": "Programming Languages",
       "level": "Expert",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "PyTorch", 
-        "TensorFlow",
-        "Keras",
-        "C/C++",
-        "Java",
-        "SQL",
-        "JavaScript",
-        "Dart"
-      ]
+      "keywords": ["Python", "PyTorch", "TensorFlow", "Keras", "C/C++", "Java", "SQL", "JavaScript", "Dart"]
     },
     {
       "name": "Machine Learning & AI",
@@ -336,16 +324,7 @@
       "name": "Development & Tools",
       "level": "Advanced",
       "icon": "fa-solid fa-laptop-code",
-      "keywords": [
-        "Django",
-        "HTML/CSS",
-        "Node.js",
-        "React",
-        "Spring",
-        "Database Design",
-        "Git",
-        "LaTeX"
-      ]
+      "keywords": ["Django", "HTML/CSS", "Node.js", "React", "Spring", "Database Design", "Git", "LaTeX"]
     }
   ],
   "languages": [
@@ -364,12 +343,7 @@
     {
       "name": "Computational Biology",
       "icon": "fa-solid fa-dna",
-      "keywords": [
-        "Cryo-ET image analysis",
-        "Connectomics segmentation", 
-        "RNA task accuracy estimation",
-        "Biological structure reconstruction"
-      ]
+      "keywords": ["Cryo-ET image analysis", "Connectomics segmentation", "RNA task accuracy estimation", "Biological structure reconstruction"]
     },
     {
       "name": "Computer Vision & AI for Health",
@@ -385,12 +359,7 @@
     {
       "name": "Machine Learning",
       "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Unsupervised detection/segmentation",
-        "Contextualized ML",
-        "LLM-as-a-judge for synthetic data evaluation",
-        "Foundation models"
-      ]
+      "keywords": ["Unsupervised detection/segmentation", "Contextualized ML", "LLM-as-a-judge for synthetic data evaluation", "Foundation models"]
     }
   ],
   "references": [
@@ -400,13 +369,13 @@
       "reference": "Professor, Department of CSE, BUET. Email: sohel.kcl@gmail.com | Google Scholar: https://scholar.google.com/citations?user=IUwFD9gAAAAJ&hl=en"
     },
     {
-      "name": "Prof. Dr. Md. Shamsuzzoha Bayzid", 
+      "name": "Prof. Dr. Md. Shamsuzzoha Bayzid",
       "icon": "fa-solid fa-user-graduate",
       "reference": "Professor, Department of CSE, BUET. Email: bayzid@cse.buet.ac.bd | Google Scholar: https://scholar.google.com/citations?user=h2vHz3wAAAAJ&hl=en"
     },
     {
       "name": "Dr. Min Xu",
-      "icon": "fa-solid fa-user-graduate", 
+      "icon": "fa-solid fa-user-graduate",
       "reference": "Associate Professor, Computational Biology Department, Carnegie Mellon University. Faculty Profile: https://scholars.cmu.edu/6103-min-xu"
     },
     {
@@ -421,7 +390,7 @@
       "summary": "Unsupervised multi-scale segmentation of cellular cryo-electron tomograms using stable diffusion foundation models for high-resolution biological structure reconstruction.",
       "highlights": [
         "CVPR 2025 submission",
-        "Carnegie Mellon University collaboration", 
+        "Carnegie Mellon University collaboration",
         "Foundation model adaptation for 3D biological imaging",
         "Self-supervised learning techniques"
       ],
@@ -439,7 +408,7 @@
         "50+ medical professionals network",
         "Sustainlaunch Labs and Herwill partnerships"
       ],
-      "startDate": "2024-01-01", 
+      "startDate": "2024-01-01",
       "endDate": "Present",
       "url": "https://www.herwill.org/"
     },
@@ -453,7 +422,7 @@
         "Real-time processing optimization"
       ],
       "startDate": "2023-01-01",
-      "endDate": "2025-01-01", 
+      "endDate": "2025-01-01",
       "url": "https://openreview.net/forum?id=RumQSMSRHj"
     },
     {

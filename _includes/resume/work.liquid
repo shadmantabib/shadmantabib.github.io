@@ -10,7 +10,12 @@
             {% assign date = startDate | append: ' - ' %}
             {% assign date = date | append: endDate %}
             <div class="mb-3" style="clear: both;">
-              <span class="badge badge-pill font-weight-bold danger-color-dark text-uppercase" style="font-size: 0.7rem; padding: 0.25em 0.5em; display: block; width: fit-content; max-width: 150px;">{{ date }}</span>
+              <span
+                class="badge badge-pill font-weight-bold danger-color-dark text-uppercase"
+                style="font-size: 0.7rem; padding: 0.25em 0.5em; display: block; width: fit-content; max-width: 150px;"
+              >
+                {{- date -}}
+              </span>
             </div>
           {% endif %}
           <div style="clear: both; margin-top: 8px;">

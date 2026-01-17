@@ -6,5 +6,7 @@ repo_description_lines_max: 2
 github_repos:
   - shadmantabib/context-review
   - shadmantabib/TomoPicker
-  - shadmantabib/NEUROSKY-EPI
-  - shadmantabib/Code_Catalyst_2024
+  - shadmantabib/CareSync
+  - shadmantabib/info_db_test
+  - shadmantabib/CSE-216-DB_project_Cricitup
+  - shadmantabib/Slowloris_Attack_Project

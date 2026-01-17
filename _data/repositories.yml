@@ -1,12 +1,10 @@
 github_users:
   - shadmantabib
 
-repo_description_lines_max: 3
+repo_description_lines_max: 2
 
 github_repos:
   - shadmantabib/context-review
   - shadmantabib/TomoPicker
-  - shadmantabib/BUET_CSE_Academic_Compendium
-  - shadmantabib/CSE-216-DB_project_Cricitup
+  - shadmantabib/NEUROSKY-EPI
   - shadmantabib/Code_Catalyst_2024
-  - shadmantabib/KUET_Bitfest25_Datathon

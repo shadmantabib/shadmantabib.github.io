@@ -6,7 +6,7 @@ export interface PubLink {
 export interface Author {
   name: string;
   me?: boolean;
-  /** co-first author (marked with * in the source bibliography) */
+  /** co-first author (marked with * in the source CV) */
   coFirst?: boolean;
 }
 
@@ -25,6 +25,8 @@ export interface Publication {
 const me = (name: string, coFirst = false): Author => ({ name, me: true, coFirst });
 const a = (name: string): Author => ({ name });
 
+export const citationCount = 18;
+
 export const publications: Publication[] = [
   {
     key: "cryoet_diffusion",
@@ -32,13 +34,14 @@ export const publications: Publication[] = [
       "Unsupervised Multi-scale Segmentation of Cellular Cryo-electron Tomograms with Stable Diffusion Foundation Model",
     authors: [
       a("Mostofa Rafid Uddin"),
-      { name: "Thanh-Huy Nguyen", coFirst: true },
-      me("H.M. Shadman Tabib", true),
+      me("H.M. Shadman Tabib"),
+      a("Thanh-Huy Nguyen"),
       a("Kashish Gandhi"),
       a("Min Xu"),
     ],
-    venue: "Submitted to CVPR",
-    year: 2025,
+    venue: "CVPR 2026 Main Track",
+    year: 2026,
+    note: "Accepted (Highlight and Award Candidate)",
     abbr: "CVPR",
     selected: true,
     links: [{ label: "PDF", href: "https://doi.org/10.1101/2025.06.25.661425" }],
@@ -49,8 +52,8 @@ export const publications: Publication[] = [
       "Localization of Macromolecules in Crowded Cellular Cryo-electron Tomograms from Extremely Sparse Labels",
     authors: [
       a("Mostofa Rafid Uddin"),
-      { name: "Ajmain Yasar Ahmed", coFirst: true },
       me("H.M. Shadman Tabib", true),
+      { name: "Ajmain Yasar Ahmed", coFirst: true },
       a("Md Toki Tahmid"),
       a("Md Zarif Ul Alam"),
       a("Zachary Freyberg"),
@@ -62,7 +65,7 @@ export const publications: Publication[] = [
     abbr: "BIB",
     selected: true,
     links: [
-      { label: "PDF", href: "https://www.biorxiv.org/content/10.1101/2024.11.04.620735v2" },
+      { label: "PDF", href: "https://academic.oup.com/bib/article/26/6/bbaf630/8351049" },
     ],
   },
   {
@@ -101,45 +104,6 @@ export const publications: Publication[] = [
     links: [{ label: "Code", href: "https://github.com/AdaptInfer/context-review" }],
   },
   {
-    key: "spectrasentinel",
-    title:
-      "SpectraSentinel: Lightweight Dual-Stream Real-Time Drone Detection, Tracking and Payload Identification",
-    authors: [
-      a("Shahriar Kabir"),
-      a("Istiak Ahmmed Rifti"),
-      me("H.M. Shadman Tabib"),
-      a("Mushfiqur Rahman"),
-      a("Sadatul Islam Sadi"),
-      a("Hasnaen Adil"),
-      a("Ahmed Mahir Sultan Rumi"),
-      a("Ch. Md. Rakin Haider"),
-    ],
-    venue: "arXiv preprint",
-    year: 2025,
-    abbr: "arXiv",
-    links: [{ label: "arXiv", href: "https://arxiv.org/abs/2507.22650" }],
-  },
-  {
-    key: "epidemic",
-    title:
-      "Study on Locomotive Epidemic Dynamics in a Stochastic Spatio-Temporal Simulation Model on a Multiplex Network",
-    authors: [me("H.M. Shadman Tabib"), a("Jaber Ahmed Deedar"), a("K.M. Ariful Kabir")],
-    venue: "arXiv preprint",
-    year: 2025,
-    abbr: "arXiv",
-    links: [{ label: "arXiv", href: "https://arxiv.org/abs/2509.21017" }],
-  },
-  {
-    key: "llm_judge",
-    title:
-      "Toward Trustworthy Difficulty Assessments: Large Language Models as Judges in Programming and Synthetic Tasks",
-    authors: [me("H.M. Shadman Tabib"), a("Jaber Ahmed Deedar")],
-    venue: "arXiv preprint",
-    year: 2025,
-    abbr: "arXiv",
-    links: [],
-  },
-  {
     key: "bangla_math",
     title: "End-to-End Bangla AI for Solving Math Olympiad Problem Benchmark",
     authors: [me("H.M. Shadman Tabib"), a("Jaber Ahmed Deedar")],
@@ -148,6 +112,24 @@ export const publications: Publication[] = [
     note: "Accepted",
     abbr: "IJNLC",
     links: [{ label: "arXiv", href: "https://arxiv.org/abs/2501.04425" }],
+  },
+  {
+    key: "decodrift",
+    title: "DeCoDrift: Stabilizing Decoder Coupling in Closed-Loop Foundation Segmentation",
+    authors: [me("H.M. Shadman Tabib"), a("Md. Shamsuzzoha Bayzid"), a("M. Sohel Rahman")],
+    venue: "arXiv preprint",
+    year: 2026,
+    abbr: "arXiv",
+    links: [{ label: "PDF", href: "https://arxiv.org/abs/2605.25730" }],
+  },
+  {
+    key: "spectral_forensics",
+    title: "Spectral Forensics of Diffusion Attention Graphs for Copy-Move Forgery Detection",
+    authors: [me("H.M. Shadman Tabib"), a("Tasriad Ahmed Tias"), a("Nafis Tahmid")],
+    venue: "arXiv preprint",
+    year: 2026,
+    abbr: "arXiv",
+    links: [{ label: "PDF", href: "https://arxiv.org/abs/2604.17287" }],
   },
   {
     key: "breast_cancer",
@@ -174,6 +156,48 @@ export const publications: Publication[] = [
     ],
   },
   {
+    key: "bengali_loop",
+    title: "Bengali-Loop: Community Benchmarks for Long-Form Bangla ASR and Speaker Diarization",
+    authors: [me("H.M. Shadman Tabib"), a("others")],
+    venue: "arXiv preprint",
+    year: 2026,
+    abbr: "arXiv",
+    links: [{ label: "PDF", href: "https://arxiv.org/pdf/2602.14291" }],
+  },
+  {
+    key: "epidemic",
+    title:
+      "Study on Locomotive Epidemic Dynamics in a Stochastic Spatio-Temporal Simulation Model on a Multiplex Network",
+    authors: [
+      me("H.M. Shadman Tabib", true),
+      { name: "Jaber Ahmed Deedar", coFirst: true },
+      a("K.M. Ariful Kabir"),
+    ],
+    venue: "arXiv preprint",
+    year: 2025,
+    abbr: "arXiv",
+    links: [{ label: "PDF", href: "https://arxiv.org/pdf/2509.21017" }],
+  },
+  {
+    key: "spectrasentinel",
+    title:
+      "SpectraSentinel: Lightweight Dual-Stream Real-Time Drone Detection, Tracking and Payload Identification",
+    authors: [
+      a("Shahriar Kabir"),
+      a("Istiak Ahmmed Rifti"),
+      me("H.M. Shadman Tabib"),
+      a("Mushfiqur Rahman"),
+      a("Sadatul Islam Sadi"),
+      a("Hasnaen Adil"),
+      a("Ahmed Mahir Sultan Rumi"),
+      a("Ch. Md. Rakin Haider"),
+    ],
+    venue: "arXiv preprint",
+    year: 2025,
+    abbr: "arXiv",
+    links: [{ label: "PDF", href: "https://arxiv.org/pdf/2507.22650" }],
+  },
+  {
     key: "mangrove",
     title:
       "Exploring Livelihood Dynamics and Policy Interventions in Mangrove Social-Ecological Systems with Agent-Based Modeling: A Mesa Framework Approach",
@@ -182,6 +206,16 @@ export const publications: Publication[] = [
     year: 2024,
     abbr: "OpenReview",
     links: [{ label: "PDF", href: "https://openreview.net/pdf?id=h8B1HGSYoa" }],
+  },
+  {
+    key: "llm_judge",
+    title:
+      "Toward Trustworthy Difficulty Assessments: Large Language Models as Judges in Programming and Synthetic Tasks",
+    authors: [me("H.M. Shadman Tabib"), a("Jaber Ahmed Deedar")],
+    venue: "arXiv preprint",
+    year: 2025,
+    abbr: "arXiv",
+    links: [{ label: "PDF", href: "https://arxiv.org/pdf/2511.18597" }],
   },
 ];
 

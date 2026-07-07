@@ -6,14 +6,14 @@ import Social from "../components/Social.astro";
 import { selectedPublications } from "../data/publications.ts";
 ---
 
-<BaseLayout title="about">
+<BaseLayout title="About">
   <header class="page-header">
     <h1>H.M. Shadman Tabib</h1>
     <p class="desc">
       Incoming Ph.D. Student, <a
         href="https://siebelschool.illinois.edu/"
         target="_blank"
-        rel="noopener">Siebel School of Computer Science, UIUC</a
+        rel="noopener">Siebel School of Computing and Data Science, UIUC</a
       >
     </p>
   </header>
@@ -22,7 +22,7 @@ import { selectedPublications } from "../data/publications.ts";
     <img src="/assets/img/prof_pic.jpg" alt="H.M. Shadman Tabib" width="280" height="350" />
     <div class="more-info">
       <p><strong>Incoming Ph.D. Student</strong></p>
-      <p>Siebel School of Computer Science</p>
+      <p>Siebel School of Computing and Data Science</p>
       <p>University of Illinois Urbana-Champaign</p>
       <p class="alma-mater">B.Sc. in CSE, BUET &rsquo;26</p>
     </div>
@@ -44,9 +44,14 @@ import { selectedPublications } from "../data/publications.ts";
       >. I am an incoming Ph.D. student at the <a
         href="https://siebelschool.illinois.edu/"
         target="_blank"
-        rel="noopener">Siebel School of Computer Science</a
-      >, University of Illinois Urbana-Champaign (UIUC).
+        rel="noopener">Siebel School of Computing and Data Science</a
+      >, University of Illinois Urbana-Champaign (UIUC), starting August 2026.
     </p>
+
+    <div class="news-widget">
+      <p class="news-widget-title"><a href="/misc">Latest news</a></p>
+      <NewsList limit={4} scrollable={false} />
+    </div>
 
     <div class="focus-tags">
       <span class="focus-tag"><span class="num">01</span>Health AI</span>
@@ -92,17 +97,10 @@ import { selectedPublications } from "../data/publications.ts";
       </li>
       <li>
         <strong>University of Wisconsin–Madison</strong> (<a
-          href="https://web.mit.edu/~blengeri/www/"
+          href="https://scholar.google.com/citations?user=a1Ck1CMAAAAJ&hl=en"
           target="_blank"
           rel="noopener">Dr. Ben Lengerich</a
         >) — Contextualized machine learning and interpretability
-      </li>
-      <li>
-        <strong>Stanford University</strong> (<a
-          href="https://scholar.google.com/citations?user=1EiYIlkAAAAJ&hl=en"
-          target="_blank"
-          rel="noopener">Dr. Muyuan Chen</a
-        >) — PFIB tomography and biological image analysis
       </li>
     </ul>
 
@@ -111,13 +109,14 @@ import { selectedPublications } from "../data/publications.ts";
     <ul>
       <li>
         <strong>Global Champion</strong> — Johns Hopkins Healthcare Design Competition 2025 (Team
-        NeoScreenix)
+        NeoScreenix), 1st among 440+ global teams
       </li>
       <li><strong>Global 2nd Runner-up</strong> — IEEE SPS Video &amp; Image Processing Cup 2025</li>
-      <li><strong>Dean's Merit Scholarship</strong> — BUET (sustained academic excellence)</li>
+      <li><strong>Global Finalist</strong> — Bradford Quantum Hackathon 2025 (Team NeuroCat)</li>
+      <li><strong>Dean's &amp; University Merit Scholarships</strong> — BUET (CGPA 3.88/4.00)</li>
       <li>
-        <strong>10+ Publications</strong> — NeurIPS Workshops, Briefings in Bioinformatics, IJNLC,
-        and more
+        <strong>13+ Publications</strong> — CVPR, NeurIPS Workshops, Briefings in Bioinformatics,
+        IJNLC, and more (18 citations on Google Scholar)
       </li>
     </ul>
     <p><strong>Entrepreneurship</strong></p>
@@ -135,18 +134,15 @@ import { selectedPublications } from "../data/publications.ts";
 
     <h2>Looking Ahead</h2>
     <p>
-      This fall, I begin my Ph.D. at the Siebel School of Computer Science, UIUC, continuing my
-      research in <strong>Health AI</strong>, <strong>Computer Vision</strong>, and
+      In August 2026, I begin my Ph.D. at the Siebel School of Computing and Data Science, UIUC,
+      continuing my research in <strong>Health AI</strong>, <strong>Computer Vision</strong>, and
       <strong>Computational Biology</strong>. My long-term goal is to build interpretable, fair, and
       contextual machine learning systems that address real-world challenges in health and
       scientific discovery.
     </p>
   </article>
 
-  <h2 class="section-heading"><a href="/misc">news</a></h2>
-  <NewsList limit={5} scrollable={true} />
-
-  <h2 class="section-heading"><a href="/publications">selected publications</a></h2>
+  <h2 class="section-heading"><a href="/publications">Selected Publications</a></h2>
   {selectedPublications.map((pub) => <PubEntry pub={pub} />)}
 
   <Social />

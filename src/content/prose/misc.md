@@ -139,14 +139,14 @@ Research should ultimately serve human health and scientific understanding. Whet
 
 ## Looking Forward
 
-In Fall 2026, I begin my Ph.D. at the Siebel School of Computer Science, University of Illinois Urbana-Champaign, while continuing to collaborate with groups at Carnegie Mellon University, University of Wisconsin–Madison, Stanford University, and BUET. My long-term goal is to build machine learning systems that can both interpret complex biological data and support real decision-making in health and science, while being aware of bias, context, and uncertainty.
+In August 2026, I begin my Ph.D. at the Siebel School of Computing and Data Science, University of Illinois Urbana-Champaign, while continuing to collaborate with groups at Carnegie Mellon University, University of Wisconsin–Madison, and BUET. My long-term goal is to build machine learning systems that can both interpret complex biological data and support real decision-making in health and science, while being aware of bias, context, and uncertainty.
 
 **Current Active Projects:**
 
 - Cryo-ET segmentation with foundation models (CMU)
-- PFIB tomography analysis (Stanford)
 - Contextualized ML review and AdaptInfer framework (UW-Madison)
-- RNA segmentation and connectomics (BUET thesis)
+- Health informatics and computational biology research (NUS, Singapore)
+- Education AI question-generation pipelines (BUET)
 - PinkLifeLine clinical deployment
 
 ---

@@ -6,12 +6,12 @@ const norm = (p: string) => (p !== "/" && p.endsWith("/") ? p.slice(0, -1) : p);
 const current = norm(pathname);
 
 const links = [
-  { href: "/", label: "about" },
-  { href: "/publications", label: "publications" },
-  { href: "/cv", label: "resume" },
-  { href: "/projects", label: "projects" },
-  { href: "/repositories", label: "repositories" },
-  { href: "/misc", label: "misc" },
+  { href: "/", label: "About" },
+  { href: "/publications", label: "Publications" },
+  { href: "/cv", label: "Resume" },
+  { href: "/projects", label: "Projects" },
+  { href: "/repositories", label: "Repositories" },
+  { href: "/misc", label: "Misc" },
 ];
 
 const isActive = (href: string) => {

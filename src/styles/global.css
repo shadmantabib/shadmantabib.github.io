@@ -1,37 +1,44 @@
 /* ============================================================================
- * Global design system — royal-blue academic portfolio
- * Ported from the al-folio + custom "royal bluish" theme to Astro, preserving
- * the original palette, typography, dark mode, and layout language.
+ * Global design system — "Illini ink" academic portfolio
+ * Signature: deep Illinois-blue ink + a sparing burnt-orange accent, a quiet
+ * nod to UIUC (the incoming PhD program) used only on numerals and small
+ * marks — never as a background or a dominant color.
+ * Display type: Newsreader (serif, restrained). Body/UI: Inter.
  * ==========================================================================*/
 
 :root {
-  --royal-blue: #4a90e2;
-  --royal-blue-dark: #2c5aa0;
+  /* royal-blue family kept as the interactive/link layer */
+  --royal-blue: #2f6fb0;
+  --royal-blue-dark: #1c294b;
   --royal-blue-light: #6b8cbe;
-  --royal-blue-ultralight: #e8f0f8;
-  --royal-blue-deep: #0076df;
-  --royal-blue-deeper: #005bb8;
+  --royal-blue-ultralight: #e8eef6;
+  --royal-blue-deep: #1a5ba8;
+  --royal-blue-deeper: #123f78;
+
+  /* signature accent — used sparingly (numerals, underline marks) */
+  --accent-warm: #c1440e;
+  --accent-warm-soft: rgba(193, 68, 14, 0.12);
 
   /* Light theme (default) */
   --bg: #ffffff;
-  --bg-subtle: #f7f9fc;
-  --text: #1c1c1d;
-  --text-muted: #5c6b7a;
-  --heading: #111418;
+  --bg-subtle: #f6f7f9;
+  --text: #23262b;
+  --text-muted: #5c6570;
+  --heading: #13294b;
   --accent: var(--royal-blue);
   --accent-strong: var(--royal-blue-dark);
   --link: var(--royal-blue-deep);
   --link-hover: var(--royal-blue-deeper);
   --card-bg: #ffffff;
-  --card-border: #e8f0f8;
-  --divider: #e0e6f0;
+  --card-border: #e3e7ee;
+  --divider: #dfe3e9;
   --nav-bg: rgba(255, 255, 255, 0.85);
-  --footer-bg: #1c1c1d;
-  --footer-text: #c7c7c7;
+  --footer-bg: #13294b;
+  --footer-text: #c3cbdb;
   --footer-link: #ffffff;
-  --chip-bg: rgba(74, 144, 226, 0.08);
-  --shadow-sm: 0 2px 8px rgba(74, 144, 226, 0.08);
-  --shadow-md: 0 8px 24px rgba(74, 144, 226, 0.14);
+  --chip-bg: rgba(47, 111, 176, 0.08);
+  --shadow-sm: 0 2px 8px rgba(19, 41, 75, 0.08);
+  --shadow-md: 0 8px 24px rgba(19, 41, 75, 0.14);
 
   --max-width: 930px;
   --nav-height: 56px;
@@ -40,23 +47,25 @@
 }
 
 html[data-theme="dark"] {
-  --bg: #1c1c1d;
-  --bg-subtle: #232325;
-  --text: #e3e3e3;
-  --text-muted: #9aa4ad;
-  --heading: #f3f3f3;
-  --accent: #6b8cbe;
-  --accent-strong: #9fc4ee;
+  --bg: #0b1526;
+  --bg-subtle: #101d33;
+  --text: #dde3ee;
+  --text-muted: #93a0b4;
+  --heading: #eef2f9;
+  --accent: #7fa8d9;
+  --accent-strong: #aecafc;
+  --accent-warm: #e37a44;
+  --accent-warm-soft: rgba(227, 122, 68, 0.16);
   --link: #8fb6e8;
   --link-hover: #b3d0f2;
-  --card-bg: #212529;
-  --card-border: #3a3d42;
-  --divider: #383b40;
-  --nav-bg: rgba(28, 28, 29, 0.85);
-  --footer-bg: #111213;
-  --footer-text: #b4b4b4;
+  --card-bg: #101d33;
+  --card-border: #23324a;
+  --divider: #22314a;
+  --nav-bg: rgba(11, 21, 38, 0.85);
+  --footer-bg: #070f1c;
+  --footer-text: #a9b4c6;
   --footer-link: #ffffff;
-  --chip-bg: rgba(107, 140, 190, 0.14);
+  --chip-bg: rgba(127, 168, 217, 0.14);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
 
@@ -85,7 +94,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text);
@@ -104,9 +113,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", "Roboto", serif;
+  font-family: "Newsreader", "Iowan Old Style", serif;
+  font-optical-sizing: auto;
   color: var(--heading);
-  line-height: 1.25;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
   scroll-margin-top: calc(var(--nav-height) + 12px);
 }
 
@@ -153,23 +164,30 @@ code {
 
 /* Page title block ------------------------------------------------------- */
 .page-header {
-  margin-bottom: 2rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 2px solid var(--divider);
+  margin-bottom: 2.2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--divider);
 }
 
 .page-header h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-  margin: 0 0 0.35rem;
+  font-size: clamp(2.3rem, 4.5vw, 3.1rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.8rem;
 }
 
 .page-header .desc {
-  font-size: 1.05rem;
-  color: var(--accent);
-  font-weight: 500;
+  font-size: 1.08rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  font-style: italic;
   margin: 0;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--accent-warm);
+}
+
+.page-header .desc a {
+  font-style: normal;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -199,9 +217,10 @@ code {
 }
 
 .navbar-brand {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.15rem;
-  font-weight: 300;
+  font-family: "Newsreader", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: italic;
   color: var(--heading);
   white-space: nowrap;
 }
@@ -398,12 +417,17 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 }
 
 .prose h2 {
-  font-size: 1.7rem;
+  /* A floated .profile card sits beside the intro text at the top of the
+     About page; without this, a full-width border-bottom here paints as a
+     line struck straight through the floated card instead of stopping
+     beside it. Headings always start a fresh, uninterrupted row. */
+  clear: both;
+  font-size: 1.85rem;
   font-weight: 600;
-  letter-spacing: -0.5px;
-  margin: 2.4rem 0 1.1rem;
-  padding-bottom: 0.7rem;
-  border-bottom: 2px solid var(--accent);
+  letter-spacing: -0.015em;
+  margin: 2.6rem 0 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--divider);
 }
 
 .prose h3 {
@@ -454,39 +478,43 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 .focus-tag {
   display: inline-flex;
   align-items: center;
-  font-size: 0.85rem;
+  font-size: 0.86rem;
   font-weight: 500;
   letter-spacing: 0.2px;
-  padding: 0.35rem 0.9rem;
-  border: 1px solid rgba(74, 144, 226, 0.35);
-  border-radius: 999px;
-  color: var(--accent-strong);
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  color: var(--heading);
+  background: var(--card-bg);
   transition:
     background-color 0.25s ease,
-    border-color 0.25s ease;
+    border-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .focus-tag .num {
-  font-family: "Roboto Slab", serif;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.78rem;
   font-weight: 700;
-  opacity: 0.55;
-  margin-right: 0.5rem;
+  color: var(--accent-warm);
+  margin-right: 0.55rem;
 }
 
-.focus-tag:first-child,
 .focus-tag:hover {
-  border-color: var(--royal-blue);
-  background: var(--chip-bg);
+  border-color: var(--accent-warm);
+  background: var(--accent-warm-soft);
+  transform: translateY(-2px);
 }
 
 /* Section heading used across list pages --------------------------------- */
 .section-heading {
-  font-size: 1.7rem;
+  clear: both;
+  font-size: 1.85rem;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.015em;
   margin: 2.6rem 0 1.4rem;
-  padding-bottom: 0.7rem;
-  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--divider);
 }
 
 .section-heading:first-of-type {
@@ -521,18 +549,65 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
 }
 
 .news-date {
-  flex: 0 0 92px;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  font-family: "Roboto Slab", serif;
+  flex: 0 0 88px;
+  color: var(--accent-warm);
+  font-size: 0.83rem;
+  font-family: "Newsreader", serif;
+  font-style: italic;
   padding-top: 0.1rem;
+}
+
+/* Compact "at a glance" widget — sits in the main column, beside the
+   floating profile photo, right under the intro so it's visible without
+   scrolling. */
+.news-widget {
+  /* Deliberately NOT cleared — it must sit in the narrower column beside the
+     right-floated .profile card, not below it, so it reads "at a glance"
+     near the top. The width is capped well short of the remaining column
+     so its own border/background can never run under the floated photo. */
+  max-width: 56%;
+  margin: 0 0 2rem;
+  padding: 1rem 1.2rem 0.4rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--accent-warm);
+  border-radius: 4px;
+}
+
+.news-widget .news-widget-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.news-widget .news-widget-title a {
+  color: inherit;
+}
+
+.news-widget .news-list {
+  max-height: 190px;
+}
+
+.news-widget .news-item {
+  padding: 0.55rem 0;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .news-widget {
+    max-width: 100%;
+  }
 }
 
 /* ------------------------------------------------------------------------ */
 /* Publications                                                             */
 /* ------------------------------------------------------------------------ */
 .pub-year {
-  font-family: "Roboto Slab", serif;
+  font-family: "Newsreader", serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--accent);

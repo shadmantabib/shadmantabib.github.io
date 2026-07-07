@@ -1,0 +1,84 @@
+---
+import Icon from "./Icon.astro";
+
+const { pathname } = Astro.url;
+const norm = (p: string) => (p !== "/" && p.endsWith("/") ? p.slice(0, -1) : p);
+const current = norm(pathname);
+
+const links = [
+  { href: "/", label: "about" },
+  { href: "/publications", label: "publications" },
+  { href: "/cv", label: "resume" },
+  { href: "/projects", label: "projects" },
+  { href: "/repositories", label: "repositories" },
+  { href: "/misc", label: "misc" },
+];
+
+const isActive = (href: string) => {
+  const h = norm(href);
+  if (h === "/") return current === "/";
+  return current === h || current.startsWith(h + "/");
+};
+---
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="/"><strong>H.M. Shadman Tabib</strong></a>
+
+    <div class="nav-mobile-controls">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" type="button">
+        <Icon name="moon" class="icon-moon" />
+        <Icon name="sun" class="icon-sun" />
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+        <Icon name="menu" />
+      </button>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      {
+        links.map((l) => (
+          <li>
+            <a href={l.href} class={isActive(l.href) ? "active" : ""}>
+              {l.label}
+            </a>
+          </li>
+        ))
+      }
+      <li class="nav-desktop-toggle">
+        <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle dark mode" type="button">
+          <Icon name="moon" class="icon-moon" />
+          <Icon name="sun" class="icon-sun" />
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  /* Desktop shows the inline toggle; mobile shows the one in mobile-controls */
+  .nav-mobile-controls .theme-toggle {
+    display: none;
+  }
+  @media (max-width: 640px) {
+    .nav-desktop-toggle {
+      display: none;
+    }
+    .nav-mobile-controls .theme-toggle {
+      display: inline-flex;
+    }
+  }
+</style>
+
+<script>
+  const navToggle = document.getElementById("nav-toggle");
+  const navLinks = document.getElementById("nav-links");
+  navToggle?.addEventListener("click", () => {
+    const open = navLinks?.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(!!open));
+  });
+  // Close mobile menu after navigating
+  navLinks?.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => navLinks.classList.remove("open"))
+  );
+</script>

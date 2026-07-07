@@ -1,0 +1,105 @@
+---
+import Nav from "../components/Nav.astro";
+import Icon from "../components/Icon.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description } = Astro.props;
+const desc =
+  description ??
+  "Incoming PhD Student, Siebel School of CS, UIUC | Health AI | Computer Vision | Computational Biology";
+const fullTitle = title === "about" ? "H.M. Shadman Tabib" : `${title} · H.M. Shadman Tabib`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={desc} />
+    <meta name="author" content="H.M. Shadman Tabib" />
+    <title>{fullTitle}</title>
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>"
+    />
+
+    <!-- No-flash theme init: run before first paint -->
+    <script is:inline>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var theme = stored || (prefersDark ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site).href} />
+  </head>
+
+  <body>
+    <Nav />
+
+    <main class="container page-wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © 2026 H.M. Shadman Tabib. Built with
+        <a href="https://astro.build" target="_blank" rel="noopener">Astro</a>, hosted on
+        <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+      </p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top" type="button">
+      <Icon name="arrow-up" />
+    </button>
+
+    <script>
+      // Theme toggle (both desktop + mobile buttons share behavior)
+      function applyTheme(theme: string) {
+        document.documentElement.setAttribute("data-theme", theme);
+        try {
+          localStorage.setItem("theme", theme);
+        } catch (e) {}
+      }
+      document.querySelectorAll(".theme-toggle").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const cur = document.documentElement.getAttribute("data-theme");
+          applyTheme(cur === "dark" ? "light" : "dark");
+        });
+      });
+
+      // Back-to-top
+      const btt = document.getElementById("back-to-top");
+      const onScroll = () => {
+        if (window.scrollY > 400) btt?.classList.add("show");
+        else btt?.classList.remove("show");
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+      btt?.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      );
+    </script>
+  </body>
+</html>

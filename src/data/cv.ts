@@ -1,0 +1,248 @@
+// Structured CV data — ported from the original _data/cv.yml.
+// Rendered generically by src/pages/cv.astro.
+
+export type CVSection =
+  | { title: string; type: "map"; contents: { name: string; value: string }[] }
+  | { title: string; type: "list"; contents: string[] }
+  | {
+      title: string;
+      type: "time_table";
+      contents: {
+        title?: string;
+        institution?: string;
+        year?: string;
+        location?: string;
+        description?: string[];
+        items?: string[];
+      }[];
+    }
+  | {
+      title: string;
+      type: "nested_list";
+      contents: { title: string; items: string[] }[];
+    };
+
+export const cvPdf = "/assets/pdf/shadman_tabib_cv.pdf";
+
+export const cv: CVSection[] = [
+  {
+    title: "General Information",
+    type: "map",
+    contents: [
+      { name: "Full Name", value: "H.M. Shadman Tabib" },
+      { name: "Email", value: "shadmantabib2002@gmail.com" },
+      { name: "Location", value: "Dhaka, Bangladesh" },
+      { name: "Languages", value: "English, Bengali" },
+    ],
+  },
+  {
+    title: "Research Interests",
+    type: "list",
+    contents: [
+      "<b>Health AI:</b> Medical imaging (cancer), multimodal/semi-supervised learning, BCI (epilepsy), bias-aware clinical decision support",
+      "<b>Computer Vision:</b> Unsupervised detection/segmentation, bioimage segmentation, foundation models, real-time systems",
+      "<b>Computational Biology:</b> Cryo-ET image analysis, connectomics segmentation, RNA task accuracy estimation",
+    ],
+  },
+  {
+    title: "Education",
+    type: "time_table",
+    contents: [
+      {
+        title: "Ph.D. in Computer Science",
+        institution:
+          "Siebel School of Computer Science, University of Illinois Urbana-Champaign (UIUC)",
+        year: "Fall 2026 – Present",
+        location: "Urbana-Champaign, IL, USA",
+        description: ["Incoming Ph.D. Student"],
+      },
+      {
+        title: "B.Sc. in Computer Science and Engineering",
+        institution: "Bangladesh University of Engineering and Technology (BUET)",
+        year: "2022 – 2026",
+        location: "Dhaka, Bangladesh",
+        description: [
+          "Graduated June 2026",
+          "Thesis Supervisors: Dr. M. Sohel Rahman, Dr. Md. Shamsuzzoha Bayzid",
+          "Dean's & University Merit Scholarships (CGPA > 3.75)",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Research Experience",
+    type: "time_table",
+    contents: [
+      {
+        title: "Remote Research Collaborator",
+        institution: "Carnegie Mellon University (Xu Lab)",
+        year: "2024 – Present",
+        location: "Pittsburgh, PA, USA (Remote)",
+        description: [
+          "Advisor: Dr. Min Xu",
+          "Unsupervised Cryo-ET segmentation and particle picking",
+          "Tomogram preprocessing and denoising for high-resolution biological structure reconstruction",
+        ],
+      },
+      {
+        title: "Remote Research Collaborator",
+        institution: "University of Wisconsin–Madison (Adaptive Inference Lab)",
+        year: "Sep 2024 – Sep 2025",
+        location: "Madison, WI, USA (Remote)",
+        description: [
+          "Advisor: Dr. Ben Lengerich",
+          "Co-authoring comprehensive review on contextualized machine learning",
+          "Contributing to AdaptInfer framework and contextual awareness in data-driven modeling",
+        ],
+      },
+      {
+        title: "Remote Research Collaborator",
+        institution: "Stanford University",
+        year: "Sep 2025 – Present",
+        location: "Stanford, CA, USA (Remote)",
+        description: [
+          "Advisor: Dr. Muyuan Chen",
+          "Segmentation and analysis of Hydra Plasma Focused Ion Beam (PFIB) tomography data",
+          "Structural interpretation and morphology reconstruction",
+        ],
+      },
+      {
+        title: "Undergraduate Research Assistant",
+        institution: "Bangladesh University of Engineering and Technology (BUET)",
+        year: "Jan 2023 – 2026",
+        location: "Dhaka, Bangladesh",
+        description: [
+          "Multiple research projects under different supervisors",
+          "Semi-supervised breast cancer classification using contextualized vision pipelines",
+          "RNA segmentation and multimodal model training frameworks",
+          "EEG-based context-aware deep learning for epilepsy prognosis",
+          "Real-time drone detection and tracking systems",
+          "Bias-aware retrieval-augmented generation for clinical predictions",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Position",
+    type: "time_table",
+    contents: [
+      {
+        title: "Part-Time Research Engineer",
+        institution: "Research & Innovation Centre (RIC), BUET",
+        year: "Feb 2025 – Present",
+        location: "Dhaka, Bangladesh",
+        description: [
+          "Project: Identification of Dengue Breeding Sites through Object Recognition (HE-01-244)",
+          "Deep learning-based object recognition for dengue vector surveillance",
+          "Image analysis for public health applications",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Entrepreneurship & Leadership",
+    type: "time_table",
+    contents: [
+      {
+        title: "Co-Founder & Head of Research",
+        institution: "PinkLifeLine",
+        year: "Jan 2025 – Present",
+        description: [
+          "Health-tech startup from NeoScreenix (JHU 2025 Global Champion)",
+          "Funded by Bangladesh National ICT Division",
+          "Partnered with Sustainlaunch Labs and Herwill",
+          "Built and leads 50+ medical professionals network",
+          "Leads ML clinical data pipelines & screening workflows",
+        ],
+      },
+      {
+        title: "Lead Organizer & Problem Setter",
+        institution: "BUET CSE Fest Deep Learning Sprint 2025",
+        year: "Nov 2025 – Jan 2026",
+        description: [
+          "Coordinated largest national AI datathon",
+          "Designed problems and rubric, supervised judging",
+          "Collaborated with academic & industry mentors",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Awards & Recognitions",
+    type: "time_table",
+    contents: [
+      {
+        year: "2025",
+        items: [
+          "<b>Global Champion</b> — Johns Hopkins Healthcare Design Competition (Team NeoScreenix)",
+          "<b>Global 2nd Runner-up</b> — IEEE SPS Video & Image Processing (VIP) Cup",
+          "Datathons: KUET 2025 (Top 5%), BUET DL Sprint 2024 (Top 15%)",
+        ],
+      },
+      {
+        year: "2024",
+        items: ["CZI Kaggle 2024 (Top 43%)", "SUST DL Enigma 2024 (Top 34%)"],
+      },
+      {
+        year: "2022 – Present",
+        items: [
+          "<b>Dean's & University Merit Scholarships</b> — BUET (CGPA > 3.75 over three consecutive years)",
+        ],
+      },
+      {
+        year: "2019 – 2020",
+        items: [
+          "<b>Champion</b> — Bangladesh Biology Olympiad (BdBO)",
+          "<b>Second Runner-up</b> — Bangladesh Mathematical Olympiad (BdMO)",
+          "<b>Winner</b> — Bangladesh Physics Olympiad (BdPhO)",
+          "<b>4th Place & Extended National Camper</b> — Bangladesh Chemistry Olympiad (BdChO)",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Technical Skills",
+    type: "nested_list",
+    contents: [
+      {
+        title: "Programming",
+        items: ["Python, PyTorch, TensorFlow, Keras", "C/C++, Java, SQL", "JavaScript, Dart"],
+      },
+      {
+        title: "ML/AI",
+        items: [
+          "Computer Vision, Deep Learning",
+          "Natural Language Processing",
+          "Unsupervised Learning",
+          "Agent-Based Modeling",
+        ],
+      },
+      {
+        title: "Specialized",
+        items: ["Cryo-ET Processing", "Medical Imaging", "Bioimage Analysis", "Mesa, Flutter"],
+      },
+      {
+        title: "Development",
+        items: ["Django, HTML/CSS, Node, React, Spring", "Database Design, Git, LaTeX"],
+      },
+    ],
+  },
+  {
+    title: "Publications",
+    type: "list",
+    contents: [
+      "10+ publications including journal articles, conference papers, and preprints",
+      "Accepted at NeurIPS Workshop, Briefings in Bioinformatics, IJNLC, NSyS",
+      "Under Review at CVPR 2026",
+      "Multiple arXiv preprints under review",
+    ],
+  },
+  {
+    title: "Media Coverage",
+    type: "list",
+    contents: [
+      "National Daily News: Daily Star, TBS News, UNB News",
+      "TV Coverage: Featured on national television for NeoScreenix achievement",
+    ],
+  },
+];

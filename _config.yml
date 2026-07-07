@@ -9,12 +9,12 @@ last_name:
 contact_note: >
   Feel free to reach out via email for research collaborations or inquiries.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Computational Biology Researcher | Computer Vision & AI for Health | Machine Learning | BUET CSE
+  Incoming PhD Student, Siebel School of CS, UIUC | Health AI | Computer Vision | Computational Biology
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: computational-biology, machine-learning, computer-vision, cryo-et, medical-imaging, AI-health, research # add your own keywords or leave empty
+keywords: health-ai, computer-vision, computational-biology, machine-learning, cryo-et, medical-imaging, UIUC, research # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

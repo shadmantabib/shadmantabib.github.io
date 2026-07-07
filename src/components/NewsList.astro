@@ -1,0 +1,20 @@
+---
+import { news } from "../data/news.ts";
+interface Props {
+  limit?: number;
+  scrollable?: boolean;
+}
+const { limit, scrollable = true } = Astro.props;
+const items = limit ? news.slice(0, limit) : news;
+---
+
+<ul class={`news-list ${scrollable ? "scrollable" : ""}`}>
+  {
+    items.map((n) => (
+      <li class="news-item">
+        <span class="news-date">{n.display}</span>
+        <span class="news-body" set:html={n.html} />
+      </li>
+    ))
+  }
+</ul>

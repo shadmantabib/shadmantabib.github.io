@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getEntry, render } from "astro:content";
+
+const entry = await getEntry("prose", "misc");
+if (!entry) throw new Error("Missing prose/misc content");
+const { Content } = await render(entry);
+---
+
+<BaseLayout title="misc" description={entry.data.description}>
+  <header class="page-header">
+    <h1>misc</h1>
+    <p class="desc">{entry.data.description}</p>
+  </header>
+
+  <article class="prose">
+    <Content />
+  </article>
+</BaseLayout>

@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { cv, cvPdf } from "../data/cv.ts";
+---
+
+<BaseLayout title="resume" description="Curriculum vitae of H.M. Shadman Tabib — research, publications, awards, and skills.">
+  <header class="page-header">
+    <h1>resume</h1>
+    <p class="desc">
+      Research experience, publications, awards, and technical expertise in health AI, computer
+      vision, and computational biology.
+    </p>
+  </header>
+
+  <p style="margin: -0.5rem 0 2rem;">
+    <a class="cv-download" href={cvPdf} target="_blank" rel="noopener">Download PDF ↓</a>
+  </p>
+
+  {
+    cv.map((section) => (
+      <section class="cv-section">
+        <h2>{section.title}</h2>
+
+        {section.type === "map" && (
+          <dl class="cv-map">
+            {section.contents.map((row) => (
+              <>
+                <dt>{row.name}</dt>
+                <dd>{row.value}</dd>
+              </>
+            ))}
+          </dl>
+        )}
+
+        {section.type === "list" && (
+          <ul class="cv-list">
+            {section.contents.map((item) => (
+              <li set:html={item} />
+            ))}
+          </ul>
+        )}
+
+        {section.type === "time_table" && (
+          <div>
+            {section.contents.map((entry) => (
+              <div class="cv-entry">
+                <div class="cv-entry-head">
+                  {entry.title && <span class="cv-entry-title">{entry.title}</span>}
+                  {entry.year && <span class="cv-entry-year">{entry.year}</span>}
+                </div>
+                {entry.institution && <p class="cv-entry-inst">{entry.institution}</p>}
+                {entry.location && <p class="cv-entry-loc">{entry.location}</p>}
+                {(entry.description || entry.items) && (
+                  <ul>
+                    {(entry.description ?? entry.items ?? []).map((d) => (
+                      <li set:html={d} />
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {section.type === "nested_list" && (
+          <div class="cv-nested">
+            {section.contents.map((group) => (
+              <div>
+                <h4>{group.title}</h4>
+                <ul>
+                  {group.items.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+    ))
+  }
+</BaseLayout>

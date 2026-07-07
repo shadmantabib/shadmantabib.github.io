@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const displayCategories = [
+  "computational biology",
+  "medical imaging",
+  "brain-computer interface",
+  "machine learning",
+  "computer vision",
+];
+
+const all = await getCollection("projects");
+const byCategory = displayCategories
+  .map((cat) => ({
+    category: cat,
+    items: all
+      .filter((p) => p.data.category === cat)
+      .sort((a, b) => a.data.importance - b.data.importance),
+  }))
+  .filter((g) => g.items.length > 0);
+---
+
+<BaseLayout
+  title="projects"
+  description="Research projects in computational biology, computer vision, and AI for health."
+>
+  <header class="page-header">
+    <h1>projects</h1>
+    <p class="desc">
+      Selected research across computational biology, computer vision, and AI for health.
+    </p>
+  </header>
+
+  {
+    byCategory.map((group) => (
+      <section>
+        <h2 class="project-category">{group.category}</h2>
+        <div class="project-grid">
+          {group.items.map((p) => (
+            <a class="project-card" href={`/projects/${p.id}/`}>
+              {p.data.img && <img src={p.data.img} alt={p.data.title} loading="lazy" />}
+              <div class="project-card-body">
+                <h3 class="project-card-title">{p.data.title}</h3>
+                <p class="project-card-desc">{p.data.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>

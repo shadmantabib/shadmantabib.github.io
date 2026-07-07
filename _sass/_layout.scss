@@ -64,6 +64,14 @@ body.sticky-bottom-footer {
         font-weight: 600;
       }
     }
+
+    p.alma-mater {
+      margin-top: 0.7rem;
+      padding-top: 0.7rem;
+      border-top: 1px solid rgba(74, 144, 226, 0.2);
+      font-size: 0.85rem;
+      opacity: 0.75;
+    }
   }
 
   .more-info:hover {
@@ -110,8 +118,13 @@ body.sticky-bottom-footer {
 }
 
 // About page article styling
+// Note: markdown body content renders inside `.clearfix` (a child of
+// `article`), while the news/selected-papers/social headers render as
+// direct children of `article` itself -- both are targeted below so each
+// gets consistent heading/paragraph/list treatment.
 .post article {
-  > p {
+  > p,
+  .clearfix > p {
     font-size: 1.05rem;
     line-height: 1.8;
     color: var(--global-text-color);
@@ -136,7 +149,8 @@ body.sticky-bottom-footer {
     }
   }
 
-  > h2 {
+  > h2,
+  .clearfix > h2 {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: -0.5px;
@@ -166,7 +180,8 @@ body.sticky-bottom-footer {
     }
   }
 
-  > ul {
+  > ul,
+  .clearfix > ul {
     margin: 1.5rem 0;
     padding-left: 2rem;
 
@@ -188,11 +203,59 @@ body.sticky-bottom-footer {
     }
   }
 
-  > hr {
+  > hr,
+  .clearfix > hr {
     border: none;
     border-top: 1px solid #e0e6f0;
     margin: 2rem 0;
     opacity: 0.6;
+  }
+}
+
+// Research-focus chip row (About page signature element)
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.2rem 0 1.8rem;
+
+  .focus-tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid rgba(74, 144, 226, 0.35);
+    border-radius: 999px;
+    color: #2c5aa0;
+    background: transparent;
+    transition: all 0.25s ease;
+
+    &:first-child {
+      border-color: #4a90e2;
+      background: rgba(74, 144, 226, 0.08);
+    }
+
+    &:hover {
+      border-color: #4a90e2;
+      background: rgba(74, 144, 226, 0.08);
+    }
+  }
+}
+
+html[data-theme="dark"] .focus-tags .focus-tag {
+  color: #9fc4ee;
+  border-color: rgba(159, 196, 238, 0.35);
+
+  &:first-child {
+    border-color: #6b8cbe;
+    background: rgba(107, 140, 190, 0.12);
+  }
+
+  &:hover {
+    border-color: #6b8cbe;
+    background: rgba(107, 140, 190, 0.12);
   }
 }
 

@@ -2,17 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://cse.buet.ac.bd/'>Department of Computer Science and Engineering, BUET</a>
+subtitle: Incoming Ph.D. Student, <a href='https://siebelschool.illinois.edu/'>Siebel School of Computer Science, UIUC</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><strong>Senior Year Undergraduate</strong></p>
-    <p>Computer Science & Engineering</p>
-    <p>Bangladesh University of Engineering and Technology</p>
-    <p>Dhaka, Bangladesh</p>
+    <p><strong>Incoming Ph.D. Student</strong></p>
+    <p>Siebel School of Computer Science</p>
+    <p>University of Illinois Urbana-Champaign</p>
+    <p class="alma-mater">B.Sc. in CSE, BUET &rsquo;26</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -28,22 +28,31 @@ latest_posts:
   limit: 0
 ---
 
-I am **H.M. Shadman Tabib**, a senior year undergraduate student in the Department of Computer Science and Engineering at [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/), working under the supervision of [Dr. M. Sohel Rahman](https://scholar.google.com/citations?user=IUwFD9gAAAAJ&hl=en) and [Dr. Md. Shamsuzzoha Bayzid](https://scholar.google.com/citations?user=h2vHz3wAAAAJ&hl=en).
+I am **H.M. Shadman Tabib**. I graduated in June 2026 with a B.Sc. in Computer Science and Engineering from [Bangladesh University of Engineering and Technology (BUET)](https://www.buet.ac.bd/), where I worked under the supervision of [Dr. M. Sohel Rahman](https://scholar.google.com/citations?user=IUwFD9gAAAAJ&hl=en) and [Dr. Md. Shamsuzzoha Bayzid](https://scholar.google.com/citations?user=h2vHz3wAAAAJ&hl=en). I am an incoming Ph.D. student at the [Siebel School of Computer Science](https://siebelschool.illinois.edu/), University of Illinois Urbana-Champaign (UIUC).
+
+<div class="focus-tags">
+  <span class="focus-tag">01 &nbsp;Health AI</span>
+  <span class="focus-tag">02 &nbsp;Computer Vision</span>
+  <span class="focus-tag">03 &nbsp;Computational Biology</span>
+</div>
 
 ---
 
 ## Research Focus
 
-My research interests lie at the intersection of **computational biology**, **computer vision**, and **AI for health**. I am passionate about developing innovative machine learning solutions for biological and medical challenges:
+My research interests lie at the intersection of **health AI**, **computer vision**, and **computational biology**. I am passionate about developing innovative machine learning solutions for biological and medical challenges:
+
+**Health AI**  
+Medical imaging for cancer detection, multimodal and semi-supervised learning, brain-computer interfaces (epilepsy), and bias-aware clinical decision support.
+
+**Computer Vision**  
+Unsupervised detection and segmentation, bioimage segmentation, foundation-model-based visual understanding, and real-time detection systems.
 
 **Computational Biology**  
 Cryo-ET image analysis, connectomics segmentation, RNA task accuracy estimation, and unsupervised structure recovery from noisy biological data.
 
-**Computer Vision & AI for Health**  
-Medical imaging for cancer detection, multimodal and semi-supervised learning, bioimage segmentation, brain-computer interfaces (epilepsy), and real-time detection systems.
-
-**Machine Learning**  
-Unsupervised detection and segmentation, contextualized ML systems, interpretable AI, and LLM-based synthetic data evaluation.
+**Machine Learning Foundations**  
+Contextualized ML systems, interpretable AI, and LLM-based synthetic data evaluation.
 
 ---
 
@@ -74,6 +83,6 @@ I am currently collaborating with leading research groups on cutting-edge projec
 
 ---
 
-## Future Vision
+## Looking Ahead
 
-I am actively pursuing graduate studies (MS/PhD) in **Computational Biology**, **Computer Vision**, and **Machine Learning** starting in Fall 2026. My long-term goal is to build interpretable, fair, and contextual machine learning systems that address real-world challenges in health and scientific discovery.
+This fall, I begin my Ph.D. at the Siebel School of Computer Science, UIUC, continuing my research in **Health AI**, **Computer Vision**, and **Computational Biology**. My long-term goal is to build interpretable, fair, and contextual machine learning systems that address real-world challenges in health and scientific discovery.

@@ -1,10 +1,6 @@
 ---
-layout: page
-permalink: /misc/
 title: misc
 description: My research journey, thoughts, and miscellaneous insights.
-nav: true
-nav_order: 6
 ---
 
 ## My Research Journey

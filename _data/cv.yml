@@ -15,19 +15,26 @@
 - title: Research Interests
   type: list
   contents:
+    - "<b>Health AI:</b> Medical imaging (cancer), multimodal/semi-supervised learning, BCI (epilepsy), bias-aware clinical decision support"
+    - "<b>Computer Vision:</b> Unsupervised detection/segmentation, bioimage segmentation, foundation models, real-time systems"
     - "<b>Computational Biology:</b> Cryo-ET image analysis, connectomics segmentation, RNA task accuracy estimation"
-    - "<b>Computer Vision & AI for Health:</b> Medical imaging (cancer), multimodal/semi-supervised learning, bioimage segmentation, BCI (epilepsy), real-time systems"
-    - "<b>Machine Learning:</b> Unsupervised detection/segmentation, contextualized ML, LLM-as-a-judge for synthetic data evaluation"
 
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. in Computer Science
+      institution: Siebel School of Computer Science, University of Illinois Urbana-Champaign (UIUC)
+      year: Fall 2026 - Present
+      location: Urbana-Champaign, IL, USA
+      description:
+        - Incoming Ph.D. Student
+
     - title: B.Sc. in Computer Science and Engineering
       institution: Bangladesh University of Engineering and Technology (BUET)
-      year: 2022 - Present
+      year: 2022 - 2026
       location: Dhaka, Bangladesh
       description:
-        - Senior Year Undergraduate Student
+        - Graduated June 2026
         - "Thesis Supervisors: Dr. M. Sohel Rahman, Dr. Md. Shamsuzzoha Bayzid"
         - "Dean's & University Merit Scholarships (CGPA > 3.75)"
 

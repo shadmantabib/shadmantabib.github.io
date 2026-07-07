@@ -1,0 +1,153 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsList from "../components/NewsList.astro";
+import PubEntry from "../components/PubEntry.astro";
+import Social from "../components/Social.astro";
+import { selectedPublications } from "../data/publications.ts";
+---
+
+<BaseLayout title="about">
+  <header class="page-header">
+    <h1>H.M. Shadman Tabib</h1>
+    <p class="desc">
+      Incoming Ph.D. Student, <a
+        href="https://siebelschool.illinois.edu/"
+        target="_blank"
+        rel="noopener">Siebel School of Computer Science, UIUC</a
+      >
+    </p>
+  </header>
+
+  <div class="profile">
+    <img src="/assets/img/prof_pic.jpg" alt="H.M. Shadman Tabib" width="280" height="350" />
+    <div class="more-info">
+      <p><strong>Incoming Ph.D. Student</strong></p>
+      <p>Siebel School of Computer Science</p>
+      <p>University of Illinois Urbana-Champaign</p>
+      <p class="alma-mater">B.Sc. in CSE, BUET &rsquo;26</p>
+    </div>
+  </div>
+
+  <article class="prose">
+    <p>
+      I am <strong>H.M. Shadman Tabib</strong>. I graduated in June 2026 with a B.Sc. in Computer
+      Science and Engineering from <a href="https://www.buet.ac.bd/" target="_blank" rel="noopener"
+        >Bangladesh University of Engineering and Technology (BUET)</a
+      >, where I worked under the supervision of <a
+        href="https://scholar.google.com/citations?user=IUwFD9gAAAAJ&hl=en"
+        target="_blank"
+        rel="noopener">Dr. M. Sohel Rahman</a
+      > and <a
+        href="https://scholar.google.com/citations?user=h2vHz3wAAAAJ&hl=en"
+        target="_blank"
+        rel="noopener">Dr. Md. Shamsuzzoha Bayzid</a
+      >. I am an incoming Ph.D. student at the <a
+        href="https://siebelschool.illinois.edu/"
+        target="_blank"
+        rel="noopener">Siebel School of Computer Science</a
+      >, University of Illinois Urbana-Champaign (UIUC).
+    </p>
+
+    <div class="focus-tags">
+      <span class="focus-tag"><span class="num">01</span>Health AI</span>
+      <span class="focus-tag"><span class="num">02</span>Computer Vision</span>
+      <span class="focus-tag"><span class="num">03</span>Computational Biology</span>
+    </div>
+
+    <h2>Research Focus</h2>
+    <p>
+      My research interests lie at the intersection of <strong>health AI</strong>,
+      <strong>computer vision</strong>, and <strong>computational biology</strong>. I am passionate
+      about developing innovative machine learning solutions for biological and medical challenges:
+    </p>
+    <p>
+      <strong>Health AI</strong><br />
+      Medical imaging for cancer detection, multimodal and semi-supervised learning, brain-computer
+      interfaces (epilepsy), and bias-aware clinical decision support.
+    </p>
+    <p>
+      <strong>Computer Vision</strong><br />
+      Unsupervised detection and segmentation, bioimage segmentation, foundation-model-based visual
+      understanding, and real-time detection systems.
+    </p>
+    <p>
+      <strong>Computational Biology</strong><br />
+      Cryo-ET image analysis, connectomics segmentation, RNA task accuracy estimation, and
+      unsupervised structure recovery from noisy biological data.
+    </p>
+    <p>
+      <strong>Machine Learning Foundations</strong><br />
+      Contextualized ML systems, interpretable AI, and LLM-based synthetic data evaluation.
+    </p>
+
+    <h2>International Collaborations</h2>
+    <p>I am currently collaborating with leading research groups on cutting-edge projects:</p>
+    <ul>
+      <li>
+        <strong>Carnegie Mellon University</strong> (<a
+          href="https://scholar.google.com/citations?user=Y3Cqt0cAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener">Dr. Min Xu</a
+        >) — Cryo-electron tomography segmentation and macromolecule localization
+      </li>
+      <li>
+        <strong>University of Wisconsin–Madison</strong> (<a
+          href="https://web.mit.edu/~blengeri/www/"
+          target="_blank"
+          rel="noopener">Dr. Ben Lengerich</a
+        >) — Contextualized machine learning and interpretability
+      </li>
+      <li>
+        <strong>Stanford University</strong> (<a
+          href="https://scholar.google.com/citations?user=1EiYIlkAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener">Dr. Muyuan Chen</a
+        >) — PFIB tomography and biological image analysis
+      </li>
+    </ul>
+
+    <h2>Recognition &amp; Impact</h2>
+    <p><strong>Awards &amp; Achievements</strong></p>
+    <ul>
+      <li>
+        <strong>Global Champion</strong> — Johns Hopkins Healthcare Design Competition 2025 (Team
+        NeoScreenix)
+      </li>
+      <li><strong>Global 2nd Runner-up</strong> — IEEE SPS Video &amp; Image Processing Cup 2025</li>
+      <li><strong>Dean's Merit Scholarship</strong> — BUET (sustained academic excellence)</li>
+      <li>
+        <strong>10+ Publications</strong> — NeurIPS Workshops, Briefings in Bioinformatics, IJNLC,
+        and more
+      </li>
+    </ul>
+    <p><strong>Entrepreneurship</strong></p>
+    <ul>
+      <li>
+        <strong>Co-Founder &amp; Head of Research</strong> — <a
+          href="https://www.herwill.org/"
+          target="_blank"
+          rel="noopener">PinkLifeLine</a
+        > (Health-tech startup funded by Bangladesh ICT Division)
+      </li>
+      <li>Leading a network of 50+ medical professionals</li>
+      <li>Developing AI-powered clinical screening pipelines</li>
+    </ul>
+
+    <h2>Looking Ahead</h2>
+    <p>
+      This fall, I begin my Ph.D. at the Siebel School of Computer Science, UIUC, continuing my
+      research in <strong>Health AI</strong>, <strong>Computer Vision</strong>, and
+      <strong>Computational Biology</strong>. My long-term goal is to build interpretable, fair, and
+      contextual machine learning systems that address real-world challenges in health and
+      scientific discovery.
+    </p>
+  </article>
+
+  <h2 class="section-heading"><a href="/misc">news</a></h2>
+  <NewsList limit={5} scrollable={true} />
+
+  <h2 class="section-heading"><a href="/publications">selected publications</a></h2>
+  {selectedPublications.map((pub) => <PubEntry pub={pub} />)}
+
+  <Social />
+</BaseLayout>

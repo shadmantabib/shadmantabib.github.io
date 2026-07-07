@@ -14,7 +14,7 @@ export const news: NewsItem[] = [
   {
     date: "2026-06-04",
     display: "Jun 2026",
-    html: '🇸🇬 Moved to Singapore as an <strong>on-site Visiting Scholar</strong> at the <strong>National University of Singapore (NUS)</strong>.',
+    html: 'Moved to Singapore as an <strong>on-site Visiting Scholar</strong> at the <strong>National University of Singapore (NUS)</strong>.',
   },
   {
     date: "2025-10-01",

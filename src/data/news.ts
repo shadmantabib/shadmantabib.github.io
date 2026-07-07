@@ -7,6 +7,16 @@ export interface NewsItem {
 // Newest first.
 export const news: NewsItem[] = [
   {
+    date: "2026-06-06",
+    display: "Jun 2026",
+    html: '🏆 Second-authored paper received a <strong>Highlight</strong> and was an <strong>Award Candidate</strong> at <strong>CVPR 2026</strong>!',
+  },
+  {
+    date: "2026-06-04",
+    display: "Jun 2026",
+    html: '🇸🇬 Moved to Singapore as an <strong>on-site Visiting Scholar</strong> at the <strong>National University of Singapore (NUS)</strong>.',
+  },
+  {
     date: "2025-10-01",
     display: "Oct 2025",
     html: '📚 Paper accepted in <strong>Briefings in Bioinformatics</strong> on macromolecule localization in crowded cellular cryo-electron tomograms from extremely sparse labels!',

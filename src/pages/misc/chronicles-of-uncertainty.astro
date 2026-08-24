@@ -24,13 +24,6 @@ const { Content } = await render(entry);
     </div>
   </header>
 
-  <div class="journey-meta" aria-label="Journey at a glance">
-    <div><strong>16 Nov</strong><span>The decision</span></div>
-    <div><strong>18</strong><span>Applications</span></div>
-    <div><strong>15</strong><span>Interview rounds</span></div>
-    <div><strong>Fall ’26</strong><span>Destination: UIUC</span></div>
-  </div>
-
   <div class="journey-layout">
     <aside class="journey-toc" aria-label="On this page">
       <p class="journey-toc-title">On this page</p>
@@ -134,48 +127,12 @@ const { Content } = await render(entry);
     line-height: 1.6;
   }
 
-  .journey-meta {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 1.2rem 0 3rem;
-    overflow: hidden;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-  }
-
-  .journey-meta div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    padding: 1rem 1.15rem;
-    border-right: 1px solid var(--divider);
-  }
-
-  .journey-meta div:last-child {
-    border-right: 0;
-  }
-
-  .journey-meta strong {
-    color: var(--accent-warm);
-    font-family: "Newsreader", serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-
-  .journey-meta span {
-    color: var(--text-muted);
-    font-size: 0.74rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
   .journey-layout {
     display: grid;
     grid-template-columns: 190px minmax(0, 1fr);
     gap: clamp(2rem, 5vw, 4.3rem);
     align-items: start;
+    margin-top: 3rem;
   }
 
   .journey-toc {
@@ -329,18 +286,6 @@ const { Content } = await render(entry);
   }
 
   @media (max-width: 760px) {
-    .journey-meta {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .journey-meta div:nth-child(2) {
-      border-right: 0;
-    }
-
-    .journey-meta div:nth-child(-n + 2) {
-      border-bottom: 1px solid var(--divider);
-    }
-
     .journey-layout {
       grid-template-columns: 1fr;
       gap: 1.5rem;

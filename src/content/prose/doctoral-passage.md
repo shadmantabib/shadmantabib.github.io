@@ -241,6 +241,14 @@ It depends on the competency already present in your portfolio. There is always 
 
 My preference was to begin the Ph.D. early. I knew I wanted it for the research, and I felt that moving forward while still in the flow of study would be most convenient for me.
 
+### How much money should I prepare for the application and relocation?
+
+This is one of the most practical—and most easily underestimated—parts of the journey. Based on my application cycle, I needed roughly **USD 90–120 for each university outside California**. For universities in California, the total expense per application was generally higher, at approximately **USD 180–220**.
+
+The application fees are only the beginning. Before traveling from Bangladesh to the United States, I strongly recommend arranging a minimum of **BDT 7–8 lakh**. This preparation fund should cover the visa-related fees, plane fare, initial house rent, security deposit, essential household items, and the other accessories and unexpected expenses involved in settling into a new country.
+
+<div class="journey-note"><strong>My practical advice:</strong> do not plan only for submitting the applications. Prepare financially for the entire transition—from the first university portal to the day you finally settle into your new home in the United States. Exact costs vary by university, city, exchange rate, airfare, and personal circumstances, so keeping an additional emergency buffer is wise.</div>
+
 <div class="finale">
 
 ## Hope
@@ -249,8 +257,8 @@ I began this process thinking I might lose little more than an application fee. 
 
 This is not a blueprint, and certainly not a promise that the same choices will produce the same outcome. It is simply the most honest account I can give: prepare early if you can, work closely enough with people that they can speak about you with conviction, know your research beyond the surface, and leave room for uncertainty.
 
-Somewhere between a three-day IELTS gamble, eighteen applications, fifteen interview rounds, a mistaken rejection, prayer on Laylat al-Qadr, and an acceptance on Chand Raat, the impossible became my next address.
+Somewhere between a three-day IELTS gamble, eighteen applications, fifteen interview rounds, a mistaken rejection, and later on the impossible became my next address miraculoulsy.
 
-**Alhamdulillah—and onward.**
+**Alhamdulillah—and onward. Keep me in your prayers!**
 
 </div>

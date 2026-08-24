@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getEntry, render } from "astro:content";
+
+const entry = await getEntry("prose", "misc");
+if (!entry) throw new Error("Missing prose/misc content");
+const { Content } = await render(entry);
+---
+
+<BaseLayout title="Research Experience" description={entry.data.description}>
+  <a class="section-back" href="/misc"><span aria-hidden="true">←</span> All miscellaneous sections</a>
+
+  <header class="page-header">
+    <h1>Research Experience</h1>
+    <p class="desc">A record of the questions, collaborations, and ideas that have shaped my research.</p>
+  </header>
+
+  <article class="prose research-narrative">
+    <Content />
+  </article>
+</BaseLayout>
+
+<style>
+  .section-back {
+    display: inline-flex;
+    gap: 0.45rem;
+    margin-bottom: 1.1rem;
+    color: var(--text-muted);
+    font-size: 0.86rem;
+    font-weight: 500;
+  }
+
+  .section-back:hover {
+    color: var(--accent-strong);
+  }
+
+  .research-narrative :global(h2:first-child) {
+    margin-top: 0;
+  }
+</style>

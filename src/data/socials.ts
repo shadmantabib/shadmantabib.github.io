@@ -2,11 +2,10 @@ export interface SocialLink {
   label: string;
   href: string;
   /** inline SVG path data rendered inside a 24x24 viewBox */
-  icon: "email" | "github" | "linkedin" | "scholar";
+  icon: "email" | "github" | "linkedin" | "scholar" | "youtube";
 }
 
 export const email = "shadmantabib2002@gmail.com";
-export const phone = "+880-1880-198766";
 
 export const socials: SocialLink[] = [
   { label: "Email", href: `mailto:${email}`, icon: "email" },
@@ -20,6 +19,11 @@ export const socials: SocialLink[] = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/hm-shadman-tabib",
     icon: "linkedin",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@shadmantabib5014",
+    icon: "youtube",
   },
 ];
 

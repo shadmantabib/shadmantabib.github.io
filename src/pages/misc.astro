@@ -1,19 +1,136 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getEntry, render } from "astro:content";
-
-const entry = await getEntry("prose", "misc");
-if (!entry) throw new Error("Missing prose/misc content");
-const { Content } = await render(entry);
 ---
 
-<BaseLayout title="Misc" description={entry.data.description}>
+<BaseLayout
+  title="Misc"
+  description="Research reflections, the story of my doctoral path, and notes from beyond the formal CV."
+>
   <header class="page-header">
     <h1>Misc</h1>
-    <p class="desc">{entry.data.description}</p>
+    <p class="desc">Research reflections, personal milestones, and notes from beyond the formal CV.</p>
   </header>
 
-  <article class="prose">
-    <Content />
-  </article>
+  <nav class="misc-sections" aria-label="Miscellaneous sections">
+    <a class="misc-section-card" href="/misc/research-experience">
+      <span class="misc-section-number" aria-hidden="true">01</span>
+      <div>
+        <h2>Research Experience</h2>
+        <p>
+          The questions, collaborations, and discoveries that have shaped my work across machine
+          learning, medical AI, and computational biology.
+        </p>
+        <span class="misc-section-link">Explore the research journey <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+
+    <a class="misc-section-card" href="/misc/doctoral-passage">
+      <span class="misc-section-number" aria-hidden="true">02</span>
+      <div>
+        <p class="misc-section-kicker">A Ph.D. Application Chronicle</p>
+        <h2>Eight Thousand Miles to Illinois</h2>
+        <p>
+          A personal chronicle of navigating Ph.D. applications and finding my way to the
+          University of Illinois Urbana-Champaign.
+        </p>
+        <span class="misc-section-link">Read the chronicle <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+  </nav>
 </BaseLayout>
+
+<style>
+  .misc-sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .misc-section-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.15rem;
+    min-height: 260px;
+    padding: 1.6rem;
+    overflow: hidden;
+    color: var(--text);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .misc-section-card::after {
+    content: "";
+    position: absolute;
+    right: -44px;
+    bottom: -54px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--accent-warm-soft);
+    border-radius: 50%;
+  }
+
+  .misc-section-card:hover {
+    color: var(--text);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+
+  .misc-section-number {
+    padding-top: 0.25rem;
+    color: var(--accent-warm);
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .misc-section-kicker {
+    margin: 0 0 0.35rem !important;
+    color: var(--accent-warm) !important;
+    font-family: "Inter", sans-serif;
+    font-size: 0.72rem !important;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .misc-section-card h2 {
+    margin: 0 0 0.8rem;
+    color: var(--heading);
+    font-size: 1.55rem;
+    font-weight: 600;
+  }
+
+  .misc-section-card p {
+    margin: 0 0 1.35rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .misc-section-link {
+    position: relative;
+    z-index: 1;
+    color: var(--accent-strong);
+    font-size: 0.86rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 680px) {
+    .misc-sections {
+      grid-template-columns: 1fr;
+    }
+
+    .misc-section-card {
+      min-height: 0;
+    }
+  }
+</style>

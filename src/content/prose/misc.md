@@ -1,6 +1,6 @@
 ---
-title: misc
-description: My research journey, thoughts, and miscellaneous insights.
+title: Research Experience
+description: The questions, collaborations, and ideas that have shaped my research experience.
 ---
 
 ## My Research Journey

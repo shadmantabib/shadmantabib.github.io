@@ -1,0 +1,377 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getEntry, render } from "astro:content";
+
+const entry = await getEntry("prose", "doctoral-passage");
+if (!entry) throw new Error("Missing prose/doctoral-passage content");
+const { Content } = await render(entry);
+---
+
+<BaseLayout title="Eight Thousand Miles to Illinois" description={entry.data.description}>
+  <a class="section-back" href="/misc"><span aria-hidden="true">←</span> All miscellaneous sections</a>
+
+  <header class="journey-hero">
+    <img
+      class="journey-hero-image"
+      src="/assets/img/UIUC%20Photos/pic_main_quad.jfif"
+      alt="H. M. Shadman Tabib standing on the Main Quad at the University of Illinois Urbana-Champaign"
+    />
+    <div class="journey-hero-shade" aria-hidden="true"></div>
+    <div class="journey-hero-copy">
+      <p class="journey-kicker">A Ph.D. Application Chronicle</p>
+      <h1>Eight Thousand Miles to Illinois</h1>
+      <p>One late decision, eighteen applications, fifteen interview rounds—and an acceptance that arrived on Chand Raat.</p>
+    </div>
+  </header>
+
+  <div class="journey-meta" aria-label="Journey at a glance">
+    <div><strong>16 Nov</strong><span>The decision</span></div>
+    <div><strong>18</strong><span>Applications</span></div>
+    <div><strong>15</strong><span>Interview rounds</span></div>
+    <div><strong>Fall ’26</strong><span>Destination: UIUC</span></div>
+  </div>
+
+  <div class="journey-layout">
+    <aside class="journey-toc" aria-label="On this page">
+      <p class="journey-toc-title">On this page</p>
+      <ol>
+        <li><a href="#prelude">Prelude</a></li>
+        <li><a href="#how-it-started">How it started</a></li>
+        <li><a href="#ielts-toefl-and-gre">IELTS, TOEFL & GRE</a></li>
+        <li><a href="#letters-of-recommendation">Recommendations</a></li>
+        <li><a href="#statement-of-purpose">Statement of purpose</a></li>
+        <li><a href="#mailing-professors">Mailing professors</a></li>
+        <li><a href="#cv-résumé-and-website">CV, résumé & website</a></li>
+        <li><a href="#the-deadline-sprint-115-december">The deadline sprint</a></li>
+        <li><a href="#the-interviews-mid-january-to-mid-march">The interviews</a></li>
+        <li><a href="#the-decision">The decision</a></li>
+        <li><a href="#frequently-asked-questions">FAQs</a></li>
+      </ol>
+    </aside>
+
+    <article class="prose journey-prose">
+      <Content />
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .section-back {
+    display: inline-flex;
+    gap: 0.45rem;
+    margin-bottom: 1.1rem;
+    color: var(--text-muted);
+    font-size: 0.86rem;
+    font-weight: 500;
+  }
+
+  .section-back:hover {
+    color: var(--accent-strong);
+  }
+
+  .journey-hero {
+    position: relative;
+    min-height: clamp(410px, 63vw, 610px);
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--heading);
+    box-shadow: var(--shadow-md);
+  }
+
+  .journey-hero-image,
+  .journey-hero-shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .journey-hero-image {
+    object-fit: cover;
+    object-position: center 42%;
+  }
+
+  .journey-hero-shade {
+    background: linear-gradient(180deg, rgba(8, 22, 43, 0.04) 24%, rgba(8, 22, 43, 0.9) 100%);
+  }
+
+  .journey-hero-copy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    max-width: 760px;
+    padding: clamp(1.5rem, 5vw, 3.2rem);
+    color: #fff;
+  }
+
+  .journey-kicker {
+    margin: 0 0 0.55rem;
+    color: #f4a261;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .journey-hero h1 {
+    max-width: 680px;
+    margin: 0 0 0.8rem;
+    color: #fff;
+    font-size: clamp(2.35rem, 6vw, 4.4rem);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  .journey-hero-copy > p:last-child {
+    max-width: 650px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: clamp(0.94rem, 2vw, 1.08rem);
+    line-height: 1.6;
+  }
+
+  .journey-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1.2rem 0 3rem;
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+  }
+
+  .journey-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 1rem 1.15rem;
+    border-right: 1px solid var(--divider);
+  }
+
+  .journey-meta div:last-child {
+    border-right: 0;
+  }
+
+  .journey-meta strong {
+    color: var(--accent-warm);
+    font-family: "Newsreader", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .journey-meta span {
+    color: var(--text-muted);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .journey-layout {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: clamp(2rem, 5vw, 4.3rem);
+    align-items: start;
+  }
+
+  .journey-toc {
+    position: sticky;
+    top: calc(var(--nav-height) + 1.5rem);
+    padding-left: 1rem;
+    border-left: 1px solid var(--divider);
+  }
+
+  .journey-toc-title {
+    margin: 0 0 0.7rem;
+    color: var(--heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .journey-toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: journey-nav;
+  }
+
+  .journey-toc li {
+    counter-increment: journey-nav;
+  }
+
+  .journey-toc a {
+    display: grid;
+    grid-template-columns: 1.7rem 1fr;
+    padding: 0.26rem 0;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  .journey-toc a::before {
+    content: counter(journey-nav, decimal-leading-zero);
+    color: var(--accent-warm);
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 0.68rem;
+  }
+
+  .journey-toc a:hover {
+    color: var(--accent-strong);
+  }
+
+  .journey-prose {
+    min-width: 0;
+    font-size: 1rem;
+  }
+
+  .journey-prose :global(h2) {
+    margin-top: 4rem;
+    font-size: clamp(1.8rem, 4vw, 2.3rem);
+  }
+
+  .journey-prose :global(h2:first-child) {
+    margin-top: 0;
+  }
+
+  .journey-prose :global(h3) {
+    margin-top: 2.6rem;
+  }
+
+  .journey-prose :global(.journey-lede) {
+    margin-bottom: 1.6rem;
+    color: var(--heading);
+    font-family: "Newsreader", "Iowan Old Style", serif;
+    font-size: clamp(1.25rem, 3vw, 1.55rem);
+    line-height: 1.55;
+  }
+
+  .journey-prose :global(.journey-note) {
+    margin: 1.8rem 0;
+    padding: 1.15rem 1.25rem;
+    color: var(--text-muted);
+    background: var(--bg-subtle);
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--accent-warm);
+    border-radius: 7px;
+    font-size: 0.91rem;
+    line-height: 1.65;
+  }
+
+  .journey-prose :global(.journey-note strong) {
+    color: var(--heading);
+  }
+
+  .journey-prose :global(figure) {
+    margin: 3rem 0;
+  }
+
+  .journey-prose :global(figure img) {
+    display: block;
+    width: 100%;
+    max-height: 510px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .journey-prose :global(figcaption) {
+    margin-top: 0.6rem;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .journey-prose :global(.pull-quote) {
+    margin: 2.4rem 0;
+    padding: 0.4rem 0 0.4rem 1.4rem;
+    border-left-color: var(--accent-warm);
+    color: var(--heading);
+    font-family: "Newsreader", serif;
+    font-size: clamp(1.25rem, 3vw, 1.65rem);
+    line-height: 1.5;
+  }
+
+  .journey-prose :global(details) {
+    margin: 1.6rem 0;
+    overflow: hidden;
+    background: var(--bg-subtle);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+  }
+
+  .journey-prose :global(summary) {
+    padding: 0.9rem 1.1rem;
+    color: var(--accent-strong);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .journey-prose :global(details > div) {
+    padding: 0.2rem 1.2rem 1.2rem;
+    border-top: 1px solid var(--divider);
+    font-size: 0.9rem;
+  }
+
+  .journey-prose :global(.finale) {
+    margin-top: 4rem;
+    padding: clamp(1.4rem, 4vw, 2.2rem);
+    background: linear-gradient(135deg, var(--bg-subtle), var(--card-bg));
+    border: 1px solid var(--card-border);
+    border-top: 3px solid var(--accent-warm);
+    border-radius: 10px;
+  }
+
+  @media (max-width: 760px) {
+    .journey-meta {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .journey-meta div:nth-child(2) {
+      border-right: 0;
+    }
+
+    .journey-meta div:nth-child(-n + 2) {
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .journey-layout {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .journey-toc {
+      position: static;
+      padding: 1rem 1.1rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+    }
+
+    .journey-toc ol {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .journey-hero {
+      min-height: 470px;
+    }
+
+    .journey-hero-image {
+      object-position: 58% center;
+    }
+
+    .journey-toc ol {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

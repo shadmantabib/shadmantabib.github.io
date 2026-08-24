@@ -392,6 +392,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   opacity: 0.8;
 }
 
+
 @media (max-width: 640px) {
   .profile {
     float: none;
@@ -958,13 +959,18 @@ html[data-theme="dark"] .pub-links a {
 }
 
 .contact-icons a {
-  font-size: 1.6rem;
+  display: inline-flex;
   color: var(--accent);
   opacity: 0.85;
   transition:
     transform 0.3s ease,
     opacity 0.3s ease,
     color 0.3s ease;
+}
+
+.contact-icons a svg {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .contact-icons a:hover {

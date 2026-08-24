@@ -208,7 +208,7 @@ After a while came an almost unbelievable message: the previous email had been s
 
 So another cycle of waiting began. This time, I barely had the strength to carry the stress. I simply waited for the days to pass by any means.
 
-Finally, on **Chand Raat**, the night before Eid, the precious email arrived: I had been accepted to the **Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign**.
+Finally, on **Chand Raat**, the night before Eid (**21 March**), the precious email arrived: I had been accepted to the **Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign**.
 
 <blockquote class="pull-quote">I did not scream with joy. I went quiet for a few days, told my parents, and let the truth settle in: that day had finally come.</blockquote>
 

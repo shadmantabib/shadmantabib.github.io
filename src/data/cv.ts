@@ -311,7 +311,7 @@ export const cv: CVSection[] = [
     title: "Publications",
     type: "list",
     contents: [
-      "13+ publications including journal articles, conference papers, and preprints (18 citations on Google Scholar)",
+      "Publications including journal articles, conference papers, and preprints (17 citations on Google Scholar)",
       "Accepted at CVPR 2026 (Highlight/Award Candidate), NeurIPS Workshop, Briefings in Bioinformatics, IJNLC, NSyS",
       "Multiple arXiv preprints (2025–2026)",
     ],

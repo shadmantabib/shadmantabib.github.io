@@ -1,6 +1,6 @@
 ---
 title: Eight Thousand Miles to Illinois
-description: A candid chronicle of my Fall 2026 Ph.D. application journey—from a late November decision to UIUC on Chand Raat.
+description: A candid chronicle of my Fall 2026 Ph.D. application journey.
 ---
 
 ## Prelude
@@ -9,7 +9,7 @@ description: A candid chronicle of my Fall 2026 Ph.D. application journey—from
 
 I received many notes asking me to share my Ph.D. journey and application process. I had been extremely lazy about it, partly because I never felt that I was accomplished enough to give “advice” to others. But now I am finally wrapping up everything I faced from end to end, beginning with my slightly **“lunatic” decision** to apply for Fall 2026 while I was still an undergraduate.
 
-<div class="journey-note"><strong>A necessary disclaimer.</strong> This is a record of my own experience applying mainly to highly ranked CS Ph.D. programs in the United States. Admissions practices differ across universities, departments, faculty members, and application cycles. Treat my observations as personal impressions—not universal rules or official admissions policy.</div>
+<div class="journey-note"><strong>A necessary disclaimer.</strong> This is a record of my own experience applying mainly to highly ranked CS Ph.D. programs in the United States. Admissions practices differ across universities, departments, domains ,faculty members, and application cycles. Treat my observations as personal impressions—not universal rules or official admissions policy.</div>
 
 ## How It Started
 
@@ -116,9 +116,9 @@ Going forward, I am very interested in developing models that connect genomic an
 
 I know you receive many such emails, but I would be very grateful for any brief advice you might have on my fit with your lab or on how best to prepare for potential Ph.D. opportunities in your group.
 
-Google Scholar: *link to Google Scholar*  
+Google Scholar: [Link to Google Scholar](https://scholar.google.com/citations?user=T08yBzoAAAAJ&hl=en) 
 Website: [shadmantabib.github.io](https://shadmantabib.github.io)  
-Résumé and SoP: *links to résumé and SoP*
+Résumé and SoP: [Link to résumé and SoP](https://drive.google.com/drive/folders/1lc5sr7YPNn-BIm1vo4B5cXrRWU2X10YW)
 
 Regards,  
 H. M. Shadman Tabib  
@@ -145,9 +145,9 @@ I tried to complete and collect every major component before **30 November**. So
 
 I focused mostly on highly ranked universities in the United States. To understand the landscape, I consulted both [U.S. News graduate CS rankings](https://www.usnews.com/best-graduate-schools/top-computer-science-schools/computer-science-rankings) and [CSRankings](https://csrankings.org/#/index?all&us). Their methodologies are very different: U.S. News combines multiple institutional measures and reputation surveys, while CSRankings is based on faculty publications at selected venues. I treated rankings as one input, not as a substitute for research fit.
 
-In total, I applied to roughly **18 universities**, mostly through central or committee-based processes. Remember that a single university may host several graduate programs with very different research emphases and acceptance patterns. CMU’s School of Computer Science, for example, includes programs spanning machine learning, computer science, HCI, and computational biology. Health or computational-biology programs may also ask for grades in relevant biology or health courses.
+In total, I applied to roughly **18 universities**, mostly through central or committee-based processes. Remember that a single university may host several graduate programs with very different research emphases and acceptance patterns. CMU’s School of Computer Science, for example, includes programs spanning machine learning, computer science, HCI, and computational biology. 
 
-I encountered no portal that specifically asked for class rank except CMU’s CPCB program. Most requested the overall CGPA and transcript.
+Health or computational-biology speocific programs may also ask for grades in relevant biology or health courses. For CS programs, you don't need to give any sepcific course GPA in the portal. I encountered no portal that specifically asked for class rank except CMU’s CPCB program. Most requested the overall CGPA and transcript.
 
 Be cautious with time: completing one university application properly can take **four or five hours, sometimes more**. Leave enough space before the deadline to review every field and document.
 
@@ -163,13 +163,13 @@ For the central programs, an interview invitation may come from the university, 
 
 Then came the interviews themselves.
 
-In my experience, the first round usually introduced the PI to my background, research experience, and publications. If the conversation went well, a second round could become much less straightforward. I was sometimes given research papers from the lab or from top-tier venues and expected to discuss them deeply in the next meeting. I prepared slides, studied the assumptions and methods, and tried to anticipate every possible question.
+In my experience, the first round usually introduced the PI to my background, research experience, and publications. If the conversation went well, a second round can be called by the same PI/ another PI. It is less straightforward. I was sometimes given research papers from the lab or from top-tier venues and expected to discuss them deeply in the next meeting. I prepared slides, studied the assumptions and methods, and tried to anticipate every possible question.
 
-Whatever the difficulty, you should be able to answer with confidence and honesty. Superficial knowledge will not carry you through a technical interview.
+The interviewer PIs prepare questions in order to assess you during the interview. Whatever the difficulty, you should be able to answer with confidence and honesty. Superficial knowledge will not carry you through a technical interview, so there is not shortcut to it.
 
 I will allow myself one small flex: after reaching UIUC, I was told that I had answered one interview question that none of the other candidates had even fully understood.
 
-An occasional third round may ask for a research idea aligned with the PI’s lab, although this was rare for me. Most of my interview processes involved around two rounds, but there is no universal pattern. The structure varies by program and PI.
+An occasional third round may ask for a research idea aligned with the PI’s lab, although this was rare for me. Most of my interview processes involved around two rounds (However, USC CBB programs called me for 4 rounds of interviews with 4 different PIs), but there is no universal pattern. The structure varies by program and PI.
 
 I am sharing [one set of slides from my interviews](https://docs.google.com/presentation/d/1tLCLivcMS3QY9h0k2s0odmErUiydNjToa8-lcCeW58Y/edit?usp=sharing) for reference.
 
@@ -202,7 +202,7 @@ From my UIUC interview, I had received hints that an offer might come.
 
 Then, on **16 March**, I received a rejection from UIUC.
 
-It was the 27th night of Ramadan—Laylat al-Qadr. I felt frozen from feet to head. There was nothing I could do except pray to the Almighty.
+I felt frozen from feet to head. It was the 27th night of Ramadan—Laylat al-Qadr. There was nothing I could do except pray to the Almighty.
 
 After a while came an almost unbelievable message: the previous email had been sent by mistake, and my application would be placed under review again.
 
@@ -231,7 +231,7 @@ I am not completely sure. For highly ranked, committee-based programs, I suspect
 
 ### What kind of research experience matters most?
 
-For AI/ML-oriented CS applications, a main-track publication at venues such as CVPR, NeurIPS, ICML, ICLR, or ICCV can boost an application enormously. Strong Q1 journal publications also matter. From my interviews, I felt that one excellent, highly relevant paper can sometimes make an applicant more competitive than several minor or weakly aligned publications.
+For AI/ML-oriented CS applications, a main-track publication at venues such as CVPR, NeurIPS, ICML, ICLR, ICCV etc. can boost an application enormously. Strong Q1 journal publications also matter. From my interviews, I felt that one excellent, highly relevant paper can sometimes make an applicant more competitive than several minor or weakly aligned publications.
 
 But this is not absolute. Venue, authorship, contribution, recommendation letters, research fit, opportunity, and luck all interact.
 

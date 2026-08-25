@@ -5,11 +5,11 @@ description: A candid chronicle of my Fall 2026 Ph.D. application journey.
 
 ## Prelude
 
-<p class="journey-lede">I am typing this from nearly 8,000 miles away from my very own home—the everyday space where I belonged for 25 long years. Sometimes it feels dreamy; sometimes it feels like a strange combination of seclusion and solitude. Above everything, I feel extremely blessed to be here, and grateful to the Almighty.</p>
+<p class="journey-lede">I am typing this nearly 8,000 miles away from my very own home, the everyday space where I belonged for 25 long years. Sometimes it feels dreamy; sometimes it feels like a strange combination of seclusion and solitude. Above everything, I feel extremely blessed to be here and grateful to the Almighty.</p>
 
 I received many notes asking me to share my Ph.D. journey and application process. I had been extremely lazy about it, partly because I never felt that I was accomplished enough to give “advice” to others. But now I am finally wrapping up everything I faced from end to end, beginning with my slightly **“lunatic” decision** to apply for Fall 2026 while I was still an undergraduate.
 
-<div class="journey-note"><strong>A necessary disclaimer.</strong> This is a record of my own experience applying mainly to highly ranked CS Ph.D. programs in the United States. Admissions practices differ across universities, departments, domains ,faculty members, and application cycles. Treat my observations as personal impressions—not universal rules or official admissions policy.</div>
+<div class="journey-note"><strong>A necessary disclaimer.</strong> This is a record of my own experience applying mainly to highly ranked CS Ph.D. programs in the United States. Admissions practices differ across universities, departments, domains, faculty members, and application cycles. Treat my observations as personal impressions rather than universal rules or official admissions policy.</div>
 
 ## How It Started
 
@@ -19,7 +19,7 @@ On **16 November**, I decided to apply for Fall ’26.
 
 Life had been too harsh for the previous four years, so I found myself thinking: *what else should I lose except money?*
 
-The decision immediately created a problem. I needed to sit for IELTS as soon as possible. With university deadlines approaching, the window was extremely narrow. I booked the exam for **19 November**, leaving myself only two or three days to prepare. It was a deadlock situation—and, honestly, a gamble with luck.
+The decision immediately created a problem. I needed to sit for IELTS as soon as possible. With university deadlines approaching, the window was extremely narrow. I booked the exam for **19 November**, leaving myself only two or three days to prepare. I was stuck, and honestly, I knew I was gambling with luck.
 
 I dared to sit for it anyway.
 
@@ -27,7 +27,7 @@ I dared to sit for it anyway.
 
 <figure>
   <img src="/assets/img/UIUC%20Photos/engie_quad_snow.jpg" alt="The Engineering Quad at UIUC covered in winter snow" loading="lazy" />
-  <figcaption>The Engineering Quad in winter—a scene that once existed only at the far end of an application portal.</figcaption>
+  <figcaption>The Engineering Quad in winter. I once knew this scene only through an application portal.</figcaption>
 </figure>
 
 ## IELTS, TOEFL, and GRE
@@ -44,7 +44,7 @@ As for the **GRE**, it was optional at every school to which I applied, so I did
 
 ## Letters of Recommendation
 
-I received my IELTS result on **21 November**. Once I knew I was eligible to apply to my intended schools, I turned immediately to letters of recommendation—the part I consider among the most important in the entire application.
+I received my IELTS result on **21 November**. Once I knew I was eligible to apply to my intended schools, I turned immediately to letters of recommendation, which I consider one of the most important parts of the entire application.
 
 I contacted professors with whom I had worked closely. During my undergraduate years, I collaborated remotely with **Dr. Min Xu** at Carnegie Mellon University and **Dr. Ben Lengerich** at the University of Wisconsin–Madison. I believed they could write highly specific letters grounded in our work together. I also requested letters from three professors in CSE at BUET: **Dr. M. Sohel Rahman**, **Dr. Md. Shamsuzzoha Bayzid**, and **Dr. A.B.M. Alim Al Islam**.
 
@@ -82,7 +82,7 @@ This topic confuses many applicants because the value of emailing professors dep
 
 You will often hear about two broad admissions models: **professor-driven** and **committee-based (or central)**. In the first, an individual professor or principal investigator has substantial influence, often tied to available funding. In the second, a faculty committee performs an initial review before applications reach potential advisors.
 
-Most programs I applied to appeared to be committee-based. From conversations after arriving at UIUC, I came to understand the central process as a long sequence: a very large pool is screened, a smaller group receives detailed faculty review, promising applications are circulated to faculty in the relevant research area, interviews follow, and recommendations eventually return to the graduate admissions leadership. This is my informal understanding—not an official description of UIUC’s process.
+Most programs I applied to appeared to be committee-based. From conversations after arriving at UIUC, I came to understand the central process as a long sequence: a very large pool is screened, a smaller group receives detailed faculty review, promising applications are circulated to faculty in the relevant research area, interviews follow, and recommendations eventually return to the graduate admissions leadership. This is only my informal understanding, not an official description of UIUC’s process.
 
 Professor-driven programs may involve fewer layers, with a PI’s research fit and funding capacity playing a more direct role. Regardless of the formal model, I think it is reasonable to email professors before applying. It may matter less in central admissions, but it can be crucial in professor-driven programs.
 
@@ -153,13 +153,13 @@ Be cautious with time: completing one university application properly can take *
 
 Once the last application is submitted, take a breath and relax.
 
-The intense waiting—and suffocation—is about to begin. I am sorry to say it like that, but that is what it is.
+Then the intense waiting begins, along with the suffocating uncertainty. I am sorry to say it like that, but that is what it is.
 
 ## The Interviews: Mid-January to Mid-March
 
 The first hell phase was the waiting: recklessly refreshing my inbox and spam folder again and again. The most horrific part was that all my undergraduate classes, labs, exams, and other responsibilities were continuing at the same time.
 
-For the central programs, an interview invitation may come from the university, a lead PI, or a professor whose lab you named. Waiting for that invaluable email—the first real sign of a probable destination—was extremely suffocating.
+For the central programs, an interview invitation may come from the university, a lead PI, or a professor whose lab you named. That email would be the first real sign of a possible destination, and waiting for it was extremely suffocating.
 
 Then came the interviews themselves.
 
@@ -181,11 +181,11 @@ Fortunately or unfortunately, that remains a black box. My personal guess was:
 
 That is only my stipulation. I received roughly **15 interview rounds** across MIT, UIUC, UMD College Park, Dartmouth, USC, UVA, UC Riverside, and UMass Amherst. I was fortunate, and I feel blessed by the Almighty. In my case, substantial research experience, a decent CGPA, publications, and very strong recommendations from faculty at highly ranked universities probably mattered most.
 
-<div class="journey-note"><strong>On undergraduate versus master’s applicants.</strong> I do not believe undergraduates are automatically prioritized over master’s students with stronger research experience. There are logical trade-offs. A master’s applicant may be expected to show one or two strong publications, but an undergraduate with no publications is not inherently favored over a master’s graduate who has them. If you demonstrate the same research maturity earlier in your career, that can make you unusually competitive—but the comparison is never that simple.</div>
+<div class="journey-note"><strong>On undergraduate versus master’s applicants.</strong> I do not believe undergraduates are automatically prioritized over master’s students with stronger research experience. There are logical trade-offs. A master’s applicant may be expected to show one or two strong publications, but an undergraduate with no publications is not inherently favored over a master’s graduate who has them. Showing the same research maturity earlier in your career can make you unusually competitive, though the comparison is never that simple.</div>
 
 <figure>
   <img src="/assets/img/UIUC%20Photos/siebel.jpg" alt="The Siebel Center for Computer Science at UIUC" loading="lazy" />
-  <figcaption>Siebel Center for Computer Science—the place behind one of the emails I refreshed my inbox hoping to see.</figcaption>
+  <figcaption>Siebel Center for Computer Science, the place behind one of the emails I kept refreshing my inbox to see.</figcaption>
 </figure>
 
 After the interviews ended, the second phase of suffocation began.
@@ -202,7 +202,7 @@ From my UIUC interview, I had received hints that an offer might come.
 
 Then, on **16 March**, I received a rejection from UIUC.
 
-I felt frozen from feet to head. It was the 27th night of Ramadan—Laylat al-Qadr. There was nothing I could do except pray to the Almighty.
+I felt frozen from feet to head. It was Laylat al-Qadr, the 27th night of Ramadan. There was nothing I could do except pray to the Almighty.
 
 After a while came an almost unbelievable message: the previous email had been sent by mistake, and my application would be placed under review again.
 
@@ -243,11 +243,11 @@ My preference was to begin the Ph.D. early. I knew I wanted it for the research,
 
 ### How much money should I prepare for the application and relocation?
 
-This is one of the most practical—and most easily underestimated—parts of the journey. Based on my application cycle, I needed roughly **USD 90–120 for each university outside California**. For universities in California, the total expense per application was generally higher, at approximately **USD 180–220**.
+This is one of the most practical parts of the journey, yet it is also one of the easiest to underestimate. Based on my application cycle, I needed roughly **USD 90–120 for each university outside California**. For universities in California, the total expense per application was generally higher, at approximately **USD 180–220**.
 
 The application fees are only the beginning. Before traveling from Bangladesh to the United States, I strongly recommend arranging a minimum of **BDT 7–8 lakh**. This preparation fund should cover the visa-related fees, plane fare, initial house rent, security deposit, essential household items, and the other accessories and unexpected expenses involved in settling into a new country.
 
-<div class="journey-note"><strong>My practical advice:</strong> do not plan only for submitting the applications. Prepare financially for the entire transition—from the first university portal to the day you finally settle into your new home in the United States. Exact costs vary by university, city, exchange rate, airfare, and personal circumstances, so keeping an additional emergency buffer is wise.</div>
+<div class="journey-note"><strong>My practical advice:</strong> do not plan only for submitting the applications. Prepare financially for the entire transition, starting with the first university portal and continuing until you finally settle into your new home in the United States. Exact costs vary by university, city, exchange rate, airfare, and personal circumstances, so keeping an additional emergency buffer is wise.</div>
 
 <div class="finale">
 
@@ -259,6 +259,6 @@ This is not a blueprint, and certainly not a promise that the same choices will 
 
 Somewhere between a three-day IELTS gamble, eighteen applications, fifteen interview rounds, a mistaken rejection, and later on the impossible became my next address miraculoulsy.
 
-**Alhamdulillah—and onward. Keep me in your prayers!**
+**Alhamdulillah. The journey continues. Keep me in your prayers!**
 
 </div>

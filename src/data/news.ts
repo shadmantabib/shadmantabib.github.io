@@ -7,6 +7,11 @@ export interface NewsItem {
 // Newest first.
 export const news: NewsItem[] = [
   {
+    date: "2026-09-09",
+    display: "Aug 2026",
+    html: 'Moved to Illinois, USA',
+  },
+  {
     date: "2026-06-06",
     display: "Jun 2026",
     html: '🏆 Second-authored paper received a <strong>Highlight</strong> and was an <strong>Award Candidate</strong> at <strong>CVPR 2026</strong>!',

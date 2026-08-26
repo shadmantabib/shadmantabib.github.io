@@ -163,7 +163,7 @@ For the central programs, an interview invitation may come from the university, 
 
 Then came the interviews themselves.
 
-In my experience, the first round usually introduced the PI to my background, research experience, and publications. If the conversation went well, a second round can be called by the same PI/ another PI. It is less straightforward. I was sometimes given research papers from the lab or from top-tier venues and expected to discuss them deeply in the next meeting. I prepared slides, studied the assumptions and methods, and tried to anticipate every possible question.
+In my experience, the first round usually introduced the PI to my background, research experience, and publications. If the conversation goes well, generally a second round is called by the same PI/ another PI. I was sometimes given research papers from the lab or from top-tier venues and expected to discuss them deeply in the next meeting. I prepared slides, studied the assumptions and methods, and tried to anticipate every possible question.
 
 The interviewer PIs prepare questions in order to assess you during the interview. Whatever the difficulty, you should be able to answer with confidence and honesty. Superficial knowledge will not carry you through a technical interview, so there is not shortcut to it.
 
@@ -210,7 +210,7 @@ So another cycle of waiting began. This time, I barely had the strength to carry
 
 Finally, on **Chand Raat**, the night before Eid (**21 March**), the precious email arrived: I had been accepted to the **Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign**.
 
-<blockquote class="pull-quote">I did not scream with joy. I went quiet for a few days, told my parents, and let the truth settle in: that day had finally come.</blockquote>
+<blockquote class="pull-quote">I did not scream with joy. I went quiet for a while, told my parents, and let the truth settle in: that day had finally come.</blockquote>
 
 Gratitude to the Almighty.
 

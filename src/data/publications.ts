@@ -44,7 +44,10 @@ export const publications: Publication[] = [
     note: "Accepted (Highlight and Award Candidate)",
     abbr: "CVPR",
     selected: true,
-    links: [{ label: "PDF", href: "https://doi.org/10.1101/2025.06.25.661425" }],
+    links: [
+      { label: "CVPR Page", href: "https://cvpr.thecvf.com/virtual/2026/poster/39706" },
+      { label: "PDF", href: "https://doi.org/10.1101/2025.06.25.661425" },
+    ],
   },
   {
     key: "macromolecule_sparse",
